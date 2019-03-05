@@ -7,10 +7,7 @@
     ],
     "rules": {
         "no-any":false,
-        "no-increment-decrement":false,
         "import-name": false,
-        "strict-boolean-expressions":false,
-        "jsx-no-lambda":false,
         "prettier":[
             true,
             {
@@ -19,7 +16,6 @@
                 "trailingComma":"all"
             }
         ],
-        "member-access":true,
         "variable-name":[
             true,
             "check-format",
