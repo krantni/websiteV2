@@ -8,9 +8,9 @@ const styles = classNames.bind(require('./App.css'));
 class App extends React.Component {
   public render() {
     return (
-      <div className={styles("container")}>
+      <div className={styles('container')}>
         <div className={styles('header')}>
-          <Header  />
+          <Header />
         </div>
         <div className={styles('experience')}>
           <Experience />

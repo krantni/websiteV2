@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 interface JobProps {
   company: string;
@@ -8,11 +8,8 @@ interface JobProps {
   desc: string;
 }
 
-const Job = (props:JobProps) => {
-  return (
-    <>
-    </>
-  )
-}
+const Job = (props: JobProps) => {
+  return <></>;
+};
 
 export default Job;
