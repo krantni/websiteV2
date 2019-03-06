@@ -8,3 +8,7 @@
 .header {
   grid-column-start: content;
 }
+
+.experience {
+  grid-column-start: content;
+}
