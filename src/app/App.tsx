@@ -1,18 +1,21 @@
 import * as React from 'react';
+import classNames from 'classnames';
 import './App.css';
 import logo from './logo.svg';
+
+const styles = classNames.bind(require('./App.css'));
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className={styles("App")}>
+        <header className={styles("App-header")}>
+          <img src={logo} className={styles("App-logo")} alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
           <a
-            className="App-link"
+            className={styles("App-link")}
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
