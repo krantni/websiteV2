@@ -8,6 +8,7 @@
     "rules": {
         "no-any":false,
         "import-name": false,
+        "strict-boolean-expressions": false,
         "prettier":[
             true,
             {
