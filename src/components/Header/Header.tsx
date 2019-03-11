@@ -1,12 +1,10 @@
 import * as React from 'react';
-import classNames from 'classnames';
-
-const styles = classNames.bind(require('./Header.css'));
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className={styles('content')}>
-      <h1>Nick Krantz</h1>
+    <div className={styles.content}>
+      <div className={styles.name}>Nick Krantz</div>
     </div>
   );
 };

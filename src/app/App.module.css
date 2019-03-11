@@ -12,8 +12,15 @@
 
 .experience {
   grid-column-start: content;
+
 }
 
 .education {
   grid-column-start: content;
+}
+
+@media (max-width: 360px) {
+  .container {
+    grid-template-columns: 5% [content] auto 5%;
+  }
 }

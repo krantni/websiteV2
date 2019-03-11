@@ -1,0 +1,259 @@
+{
+  "jobs" : [ {
+    "companyName": "Ameriprise Financial",
+    "startDate" : "July 2017",
+    "endDate" : "Present",
+    "imagePath" : "/images/jobs/ampf.jpg",
+    "positions" : [
+        {
+            "descriptions" : [],
+            "intro" : "",
+            "title" : "Associate Developer",
+            "startDate" : "November 2018",
+            "endDate" : "Present"
+        },
+        {
+            "descriptions" : [ 
+                "Web Development - Development work using BackBone and React for multiple existing internal applications. Handled all test deployments for Advisor Mobile, Client Selector, Seminar & Events and Advisor Technology Enrollment.",
+                "Architecture and Brokerage Experience - Wrote user requirements for existing brokerage related services while adding new functionality based on market research and data availability. Built proof of concepts to extend the Ameriprise Brokerage Platform using JavaScript. Proof of Concepts include: charting client investment goals, context sharing to other applications and URI scheme to link into the platform from external applications in replacement of ActiveX controls.", 
+                "Messaging and Mobile - Support of Office 365 applications such as Microsoft Exchange 2010, Exchange 2016, Exchange Online and Azure. Creation and use of PowerShell scripts to perform reporting and administrative tasks in Exchange Online and Azure."
+            ],
+            "intro" : "The Technology Leadership Development Program is an 18 month rotational program. Over the course of the program, I moved through three jobs (six months each), exposing myself to multiple aspects of Technology at Ameriprise.",
+            "title" : "Technology Leadership Development Program",
+            "startDate" : "July 2017",
+            "endDate" : "November 2018"
+        }
+    ]
+  },
+  {
+    "companyName": "Undergraduate Teaching Assistant",
+    "startDate" : "September 2014",
+    "endDate" : "May 2017",
+    "imagePath" : "/assets/images/jobs/UMN.png",
+    "positions" : [
+        {
+            "descriptions" : [ "Lead office hours and lab sessions on course topics. Subjects including: principles and techniques for creating robust, modular programs and organzing data/computations around types.", "Providing general support and one-to-one assistance for students with covered material or more general help with functional programming in Clojure and OCaml." ],
+            "intro" : "",
+            "title" : "Undergraduate Teaching Assistant - CSCI 2041 - Advanced Programming Principles",
+            "startDate" : "January 2016",
+            "endDate" : "May 2017"
+        },
+        {
+            "descriptions" : [ "Guided students through subjects including: implementation of stacks, queues, hash tables, binary trees, and searching/sorting algorithms.", "Quickly resolving conflicts and problem solving in weekly labs and office hours.", "Providing all neccessary support for students on course topics or general help with Python and Java." ],
+            "intro" : "",
+            "title" : "Undergraduate Teaching Assistant for CSCI 1913 - Introduction to Algorithms & Data Structures",
+            "startDate" : "September 2014",
+            "endDate" : "December 2014"
+        }
+    ]
+  }, {
+    "companyName" : "Honeywell - Aerospace",
+    "startDate" : "May 2016",
+    "endDate" : "August 2016",
+    "imagePath" : "/assets/images/jobs/Honeywell.png",
+    "positions":[    {
+        "descriptions" : [ "Administrate Collaborative Lifestyle Management tools with Requirement Team.", "Extend existing software using JavaScript to perform repeated tasks for report generation and test limits of the software.", "Remotely support all Aerospace Engineers and work remotely with the Requirement Team across the United States and the world.", "Research Aerospace data models and standards to help develop a standalone API any Aerospace Data." ],
+        "intro" : "",
+        "title" : "Engineering Tools Intern",
+        "startDate" : "May 2016",
+        "endDate" : "August 2016"
+        }
+    ]
+  }, {
+    "companyName" : "Graco Inc.",
+    "startDate" : "February 2015",
+    "endDate" : "August 2015",
+    "imagePath" : "/assets/images/jobs/Graco.png",
+    "positions":[{
+        "descriptions" : [ "Developing in house dynamic web applications using HTML and pure JavaScript.", "Monitoring website performance and interactions with the websites from a client side perspective.", "Knowledge of website procedures and maintenance to keep existing tools current along with creating new tools.", "Generating and analyzing database reports." ],
+        "endDate" : "August 2015",
+        "intro" : "",
+        "title" : "Information Systems Intern",
+        "startDate" : "February 2015"
+    }]
+  }, {
+    "companyName" : "Stoughton Country Club",
+    "startDate" : "May 2010",
+    "endDate" : "August 2014",
+    "imagePath" : "/assets/images/jobs/SCC.png",
+    "positions" :[{
+        "descriptions" : [ "Complete installation and maintenance of irrigation system", "Construction of golf terrain including tee boxes, fairways, greens and sand bunkers", "Daily care of fairways, sand traps and greens" ],
+        "endDate" : "August 2014",
+        "intro" : "General golf course maintenance including:",
+        "title" : "Greenskeeper",
+        "startDate" : "May 2010"
+    }]
+  }, {
+    "companyName" : "Stoughton Cinema Cafe",
+    "startDate" : "Jun 2009",
+    "endDate" : "April 2010",
+    "imagePath" : "",
+    "positions":[{
+        "descriptions" : [ "Prepare and cook menu items", "Prep and clean kitchen and work areas", "Concession sales", "Costumer Service" ],
+        "endDate" : "April 2010",
+        "intro" : "",
+        "jobTitle" : "Cook",
+        "startDate" : "Jun 2009"
+    }]
+  } ],
+  "recipes" : [ {
+    "id" : "BSPC",
+    "ingredients" : [ "2 bacon strips, chopped", "1 medium onion, chopped", "4 boneless pork loin chops (4 ounces each)", "1/2 teaspoon garlic powder", "1/4 teaspoon salt", "2 slices reduced-fat Swiss cheese, halved" ],
+    "isClickable" : true,
+    "source" : "\"https://www.tasteofhome.com/recipes/bacon-swiss-pork-chops",
+    "steps" : [ "In a nonstick skillet coated with cooking spray, cook bacon and onion over medium heat until bacon is crisp, stirring occasionally. Drain on paper towels; discard drippings.", "Sprinkle pork chops with garlic powder and salt. Add pork chops to same pan; cook over medium heat 3-4 minutes on each side or until a thermometer reads 145°. Top pork with bacon mixture and cheese. Cook, covered, on low heat for 1-2 minutes or until cheese is melted. Let stand 5 minutes before serving." ],
+    "title" : "Bacon-Swiss Pork Chops"
+  }, {
+    "id" : "BCMAC",
+    "ingredients" : [ "Marinade: 1/4 cup pickle juice, 1/2 cup hot sauce, 1 cup buttermilk", "2 lbs Chicken breast", "1/4 cup hot sauce (for chicken)", "1 lb macaroni (Cavatappi or shells work great too)", "4 cubes of chicken bouillon", "4 Tbsp butter", "4 tbsp flour", "3 cups half & half", "1 clove garlic", "Freshly ground pepper (to taste)", "2 tsp mustard powder", "8oz of American cheese", "8 oz of very sharp cheddar", "4 oz of Romano", "1/2 cup hot sauce (for sauce)", "1/2 cup sour cream", "1 heaping cup Panko breadcrumbs", "3 tbsp butter", "1/4 cup Romano", "1 cup crumbled Bleu Cheese" ],
+    "isClickable" : true,
+    "source" : "https://imgur.com/gallery/mHVkO",
+    "steps" : [ "Add 1 cup buttermilk, 1/2 cup hot sauce and 1/4 cup pickle juice to gallon size bag, mix together", "Add chicken, remove as much air from the bag as you can, and refrigerate for a couple of hours, or overnight", "Cook the chicken on medium-high until it's cooked through and has some nice color on each side", "Let the chicken cool down, try not to eat too much of it", "Chop up the chicken into cubes, add 1/4 cup hot sauce and toss to coat", "Bechamel time. Melt 4 tbsp of butter", "Add 4 tbsp of flour, Mix, make sure to remove all lumps", "Add the first cup of half & half VERY slowly", "Let this simmer on low for about 20 minutes, stirring frequently", "Ground pepper, 1 clove of garlic and 2 tsp of mustard powder", "Get the water ready. I use chicken bouillon instead of salt for a little bit of extra flavor", "When it's boiling, add the pasta. Cook according to the box directions for al dente", "Shred that cheese - 8oz / 2 cups sharp cheddar, 4 oz / 1 cup romano", "Add shredded cheese and 8oz freshly American Cheese, let fully melt", "Add 1/2 cup of sour cream* and 1/2 cup Hot Sauce.", "Add Chicken and drained noodles", "Put in 9 by 13 inch pan", "For topping: Melt 3 tbsp butter, add a heaping cup of panko breadcrumbs, mix together and add Add that 1/4 cup / 1 oz of romano", "Spread out the breadcrumbs over the mac & cheese and bleu, put in the oven a broil until toasted on top" ],
+    "title" : "Buffalo Chicken Mac and Cheese"
+  }, {
+    "id" : "CE",
+    "ingredients" : [ "8 (6-inch) corn tortillas", "Cooking spray", "1 1/2 tablespoons chopped onion", "1 1/2 tablespoons chopped fresh cilantro", "1 jalapeño pepper, seeded and chopped", "3 cups shredded cooked chicken breast", "3 (10-ounce) cans enchilada sauce, divided", "1 1/2 cups (6 ounces) shredded sharp Cheddar cheese", "1/2 cup diced tomato", "1/3 cup sliced ripe olives", "4 cups shredded iceberg lettuce" ],
+    "isClickable" : true,
+    "source" : "http://www.myrecipes.com/recipe/chicken-enchiladas",
+    "steps" : [ "Preheat oven to 350°.", "Wrap tortillas in aluminum foil; bake at 350° for 15 minutes. While tortillas bake, coat a large nonstick skillet with cooking spray; place over medium-high heat until hot. Add onion, cilantro, and jalapeño; sauté until onion is tender. Add chicken and 1 can enchilada sauce; cook 5 minutes.", "Spoon chicken mixture evenly down centers of tortillas. Roll up tortillas; place, seam sides down, in a 13- x 9-inch baking dish. Heat remaining 2 cans enchilada sauce in a saucepan; pour over enchiladas, and top with cheese. Bake at 350° for 10 minutes or until enchiladas are thoroughly heated and cheese melts. Sprinkle evenly with tomato and olives. Serve over lettuce." ],
+    "title" : "Chicken Enchiladas"
+  }, {
+    "id" : "CES",
+    "ingredients" : [ "3 skinless boneless chicken breasts cubed into bite sized pieces", "2 tablespoons olive oil", "1/2 medium red onion diced", "1 medium jalapeno deseeded and diced", "1 (14-ounce) can diced tomatoes with peppers", "1 (10-ounce) can enchilada sauce", "2 cups tortilla chips crumbled", "1 (8-ounce) package Monterrey Jack cheese, grated", "sour cream optional" ],
+    "isClickable" : true,
+    "source" : "https://addapinch.com/chicken-enchilada-skillet-recipe/",
+    "steps" : [ "Drizzle olive oil into medium skillet over medium heat. Add cubed chicken and saute until cooked through. Add diced onion and jalapeno and cook until just tender. Stir in diced tomatoes and enchilada sauce and simmer over medium heat until heated throughout. Top with tortilla chips and cheese. Cover skillet with lid and allow to cook until the cheese has melted.", "Serve warm.", "Garnish with sour cream, optional" ],
+    "title" : "Chicken Enchilada Skillet"
+  }, {
+    "id" : "CPC",
+    "ingredients" : [ "1.5 lb. cooked chicken- diced (if you don’t have cooked chicken simply grill almost 2 lb. thawed boneless chicken breast in the pan, season with salt and pepper to taste)", "1 jar (28 ounces) of marinara sauce", "1 3/4 cup shredded mozzarella cheese", "1/2 cup grated Parmesan cheese", "1 1/2 -2 tablespoons olive oil", "1 cup Panko bread crumbs", "Italian seasoned salt-to taste", "1 1/2 -2 tablespoons freshly chopped parsley for serving" ],
+    "isClickable" : true,
+    "source" : "https://omgchocolatedesserts.com/chicken-parmesan-casserole/",
+    "steps" : [ "Preheat oven to 350 F and grease 8 1/2 x 8 1/2 inch casserole with olive oil or spray with cooking spray.", "Place chopped cooked chicken in baking dish and pour marinara sauce over the chicken, stir to combine.", "Spread shredded mozzarella cheese on top to cover the chicken. Sprinkle with grated parmesan.", "In a bowl stir together bread crumbs and Italian seasoned salt. Add 1 tablespoon of olive oil and stir well. If it seems to dry and the crumbs are not evenly moistened add more olive oil and stir to combine.", "Sprinkle bread crumb mixture over the cheese and bake 20-25 minutes until bread crumbs get nice golden color.", "Sprinkle freshly chopped parsley before serving if desired.", "If you want to make this ahead and freeze for later DO NOT BAKE, just cover the casserole and place in the freezer. Thaw completely before baking." ],
+    "title" : "Chicken Parmesan Casserole"
+  }, {
+    "id" : "CSC",
+    "ingredients" : [ "2 lb lean (at least 80%) ground beef", "1 large onion, chopped (1 cup)", "2 cloves garlic, finely chopped", "1 can (28 oz) diced tomatoes, undrained", "1 can (16 oz) chili beans in sauce, undrained", "1 can (15 oz) tomato sauce", "2 tablespoons chili powder", "1 1/2 teaspoons ground cumin", "1/2 teaspoon salt", "1/2 teaspoon pepper" ],
+    "isClickable" : true,
+    "source" : "https://www.bettycrocker.com/recipes/slow-cooker-family-favorite-chili/c6f4c4e2-8298-4d9d-8f21-d4ca19d35cb7",
+    "steps" : [ "In 12-inch skillet, cook beef and onion over medium heat 8 to 10 minutes, stirring occasionally, until beef is brown; drain.", "In 4- to 5-quart slow cooker, mix beef, onion and remaining ingredients.", "Cover and cook on Low heat setting 6 to 8 hours." ],
+    "title" : "Chili - Slow Cooker"
+  }, {
+    "id" : "CPL",
+    "ingredients" : [ "1 lb lean ground beef", "1 onion, chopped", "2 garlic cloves, smashed", "1 (28 ounce) can tomato sauce", "1 (6 ounce) can tomato paste", "1 1/2 teaspoons salt", "1 teaspoon dried oregano", "12 ounces cottage cheese", "1/2 cup grated parmesan cheese or 1/2 cup asiago cheese", "12 ounces lasagna noodles, uncooked", "16 ounces shredded mozzarella cheese" ],
+    "isClickable" : true,
+    "source" : "http://www.geniuskitchen.com/recipe/crock-pot-lasagna-21706",
+    "steps" : [ "Brown ground beef, onion and garlic in frypan.", "Add tomato sauce, tomato paste, salt and oregano.", "Cook long enough to get it warm.", "Spoon a layer of meat sauce onto the bottom of the slow cooker.", "Add a double layer of uncooked lasagna noodles (break to fit) and top with cheeses.", "Repeat with sauce, noodles and cheeses until all are used up.", "Cover and cook on low for 4 to 5 hours." ],
+    "title" : "Crock Pot Lasagna"
+  }, {
+    "id" : "JPC",
+    "ingredients" : [ "6 oz. cream cheese, softened", "1 c. shredded Cheddar", "1/3 c. Sliced green onions", "2 cloves garlic, minced", "1 jalapeno, minced", "Kosher salt", "Freshly ground black pepper", "4 boneless skinless chicken breasts", "12 slices bacon" ],
+    "isClickable" : true,
+    "source" : "https://www.delish.com/cooking/recipe-ideas/recipes/a52157/jalapeno-popper-chicken-recipe/",
+    "steps" : [ "In a large bowl, stir together cream cheese, cheddar, green onions, garlic, and jalapeno and season with salt and pepper.", "Make a pocket on the side of each chicken breast, making sure not to slice entirely through the breast. Stuff chicken with cream cheese mixture. Place 3 slices of bacon on a cutting board. Place chicken breast on top and wrap chicken breast in bacon.", "Preheat a large cast-iron skillet over medium heat. Add bacon-wrapped chicken and season with more pepper. Cook until bacon is crispy and chicken no longer pink, 10 minutes per side, turning with tongs to make sure to get all sides of the bacon cooked." ],
+    "title" : "Jalapeno Popper Chicken"
+  }, {
+    "id" : "JRD",
+    "ingredients" : [ "3 cups ranch salad dressing", "1 tablespoon cilantro leaves minced", "1/4 cup pickled jalapeno pepper, chopped", "1 avocado - peeled, pitted, and chopped" ],
+    "isClickable" : true,
+    "source" : "\"https://www.allrecipes.com/recipe/223006/jalapeno-ranch-dressing/",
+    "steps" : [ "Blend until smooth and then refrigerate for atleast 2 hours" ],
+    "title" : "Jalapeno Ranch Dressing"
+  }, {
+    "id" : "MBR",
+    "ingredients" : [ "1 lb. sirloin streak, sliced against the grain", "2 tbsp. corn starch", "2 tbsp. vegetable oil", "1 tbsp. sesame oil", "3 garlic cloves, minced", "1 tsp. minced ginger", "1/2 c. soy sauce", "1/4 c. brown sugar", "1 c. chicken broth", "pinch red pepper flakes", "1 large head broccoli, cut into florets", "1 carrot, peeled and cut into matchsticks", "3 package instant ramen, flavor pack discarded", "3 green onions, thinly sliced", "Toasted sesame seeds" ],
+    "isClickable" : true,
+    "source" : "https://www.delish.com/cooking/recipe-ideas/recipes/a51085/mongolian-beef-ramen-recipe/",
+    "steps" : [ "Cook ramen noodles according to package instructions. Drain and set aside.", "In a large skillet over medium-high heat, heat vegetable oil. Toss beef with corn starch. Cook until crispy, about 2 minutes per side. Transfer to a plate.", "Reduce heat to medium-low. Add sesame oil to skillet and stir in garlic and ginger. Cook until fragrant, 1 minute then add soy sauce, brown sugar and chicken broth. Bring mixture to a boil, reduce heat and simmer until the sauce is thickened, 3 to 5 minutes.", "Add broccoli and carrots then cover the skillet with a tight-fitting lid and cook until the vegetables are tender, about 5 minutes.", "Return beef to skillet and stir until completely coated in sauce. Stir in cooked ramen noodles and green onions. Garnish with toasted sesame seeds." ],
+    "title" : "Mongolian Beef Ramen"
+  }, {
+    "id" : "PCSF",
+    "ingredients" : [ "8 ounces uncooked thick rice noodles", "1/3 cup water", "1/4 cup reduced-sodium soy sauce", "1/4 cup peanut butter", "4-1/2 teaspoons brown sugar", "1 tablespoon lemon juice", "2 garlic cloves, minced", "1/2 teaspoon crushed red pepper flakes", "1 pound boneless skinless chicken breasts, cut into 1/2-inch strips", "2 tablespoons canola oil, divided", "1 bunch broccoli, cut into florets", "1/2 cup shredded carrot" ],
+    "isClickable" : true,
+    "source" : "https://www.tasteofhome.com/recipes/contest-winning-peanut-chicken-stir-fry/",
+    "steps" : [ "Cook noodles according to package directions. Meanwhile, in a small bowl, combine the water, soy sauce, peanut butter, brown sugar, lemon juice, garlic and pepper flakes; set aside.", "In a large skillet or wok, stir-fry chicken in 1 tablespoon oil until no longer pink. Remove and keep warm. Stir-fry broccoli and carrot in remaining oil for 4-6 minutes or until vegetables are crisp-tender. Stir sauce mixture; add sauce and chicken to skillet. Return chicken to the skillet. Drain noodles; toss with chicken mixture." ],
+    "title" : "Peanut Chicken Stir-Fry"
+  }, {
+    "id" : "PCS",
+    "ingredients" : [ "No-Stick Cooking Spray", "1 can (14.5 oz each) Diced Tomatoes, drained well", "1 cup shredded Italian blend or mozzarella cheese", "1/3 cup chopped red onion", "3 tablespoons prepared basil pesto", "1-1/2 cups shredded rotisserie chicken", "1 pkg (13.8 oz each) refrigerated pizza crust dough", "1 tablespoon grated Parmesan cheese" ],
+    "isClickable" : true,
+    "source" : "https://www.readyseteat.com/recipes-Pesto-Chicken-Stromboli-7577",
+    "steps" : [ "Preheat oven to 400°F. Spray large baking sheet with cooking spray; set aside. Stir together drained tomatoes, Italian cheese, onion and pesto in medium bowl. Add chicken; stir to combine.", "Unroll pizza dough on baking sheet; press into 14x10-inch rectangle. Spread chicken mixture evenly over dough to within 1-inch of each edge. Roll up, starting with a long edge, to enclose filling. Place seam side down. Fold ends under, pinching together to seal. Sprinkle Parmesan cheese over top of dough.", "Bake 30 minutes or until golden brown. Cool 5 minutes; cut into 12 slices" ],
+    "title" : "Pesto Chicken Stromboli"
+  }, {
+    "id" : "PCCLW",
+    "ingredients" : [ "1 tablespoon olive oil", "1 pound ground chicken", "2 cloves garlic, minced", "1 onion, diced", "1/4 cup hoisin sauce", "2 tablespoons soy sauce", "1 tablespoon rice wine vinegar", "1 tablespoon freshly grated ginger", "1 tablespoon Sriracha, optional", "1 (8-ounce) can whole water chestnuts, drained and diced", "2 green onions, thinly sliced", "Kosher salt and freshly ground black pepper, to taste", "1 head butter lettuce" ],
+    "isClickable" : true,
+    "source" : "https://damndelicious.net/2014/05/30/pf-changs-chicken-lettuce-wraps/",
+    "steps" : [ "Heat olive oil in a saucepan over medium high heat. Add ground chicken and cook until browned, about 3-5 minutes, making sure to crumble the chicken as it cooks; drain excess fat.", "Stir in garlic, onion, hoisin sauce, soy sauce, rice wine vinegar, ginger and Sriracha until onions have become translucent, about 1-2 minutes.", "Stir in chestnuts and green onions until tender, about 1-2 minutes; season with salt and pepper, to taste.", "To serve, spoon several tablespoons of the chicken mixture into the center of a lettuce leaf, taco-style." ],
+    "title" : "PF Chang’S Chicken Lettuce Wraps"
+  }, {
+    "id" : "SCPP",
+    "ingredients" : [ "1 tbsp. olive oil", "3 boneless, skinless chicken breasts, cut into 1 inch chunks", "kosher salt", "Freshly ground black pepper", "1/2 onion, chopped", "2 medium carrots, peeled and chopped", "2 stalks celery, chopped", "2 tsp. fresh thyme", "3 tbsp. flour", "1 1/2 c. frozen peas", "2 c. chicken broth", "2 tbsp. heavy cream", "1 can refrigerated biscuit dough", "1 Egg, lightly beaten" ],
+    "isClickable" : true,
+    "source" : "https://www.delish.com/cooking/recipe-ideas/recipes/a56617/easy-skillet-chicken-pot-pie-recipe/",
+    "steps" : [ "Preheat oven to 350°. In a large skillet over medium heat, heat oil. Add chicken and season with salt and pepper. Cook until browned on all sides and remove from skillet.", "Add onion, carrots, celery, and thyme and cook until vegetables are soft, 4-5 minutes. Sprinkle flour over vegetables and cook 2-3 minutes more. Add chicken broth and bring to a simmer, cooking 8-10 minutes more, until slightly thickened. Turn off heat and stir in cream, peas, and chicken.", "Remove biscuits from can and slice in half horizontally. Arrange, overlapping, in a ring on the outer circle of the skillet. Brush with egg wash and bake until golden, 25-30 minutes. Serve." ],
+    "title" : "Skillet Chicken Pot Pie"
+  }, {
+    "id" : "SCS",
+    "ingredients" : [ "1 cup uncooked long grain white rice", "1 cup salsa", "1.5-2 cups precooked shredded chicken", "15 oz. can black beans", "1 Tbsp chili powder", "1 3/4 cups chicken broth", "1 cup shredded cheese", "2-3 green onions, sliced" ],
+    "isClickable" : true,
+    "source" : "https://www.budgetbytes.com/southwest-chicken-skillet/",
+    "steps" : [ "In a large skillet, combine the rice, salsa, chicken, black beans (drained), chili powder, and chicken broth. Stir until everything is evenly combined.", "Place a tight fitting lid on the skillet, turn the heat on to high, and let the skillet come to a full boil. As soon as the skillet comes to a boil, turn the heat down to low and let it simmer for 15 minutes. Make sure it is simmering the entire time, turning the heat up slightly if needed (you should be able to hear it simmer quietly).", "After 15 minutes, turn off the heat, and let it rest with the lid in place for 5 more minutes. Finally, remove the lid, and fluff the mixture with a fork. All of the liquid should be absorbed and the rice should be tender. Sprinkle 1 cup of shredded cheese over top, replace the lid, and let it sit for a few minutes, or until the cheese is melted. Meanwhile, slice the green onions. Sprinkle the green onions over the melted cheese and serve hot." ],
+    "title" : "Southwest Chicken Skillet"
+  }, {
+    "id" : "SOC",
+    "ingredients" : [ "2 large eggs, beaten", "1/2 c. plus 1 tbsp. cornstarch, divided", "1/4 c. all-purpose flour", "kosher salt", "Freshly ground black pepper", "2 lb. boneless skinless chicken breasts, cut into 1 inch pieces", "canola oil", "2 cloves garlic, minced", "1/2 tsp. minced ginger", "1/2 tsp. red chili flakes", "2/3 c. freshly squeezed orange juice", "2 tbsp. soy sauce", "1 tbsp. apple cider vinegar", "1 tbsp. sweet chili sauce", "1 tbsp. brown sugar", "2 green onions, chopped", "cooked white rice, for serving" ],
+    "isClickable" : true,
+    "source" : "https://www.delish.com/cooking/recipe-ideas/recipes/a52467/sticky-orange-chicken-recipe/",
+    "steps" : [ "Set up dredging station: In one bowl add eggs, and in a second bowl mix together 1/2 cup cornstarch, flour, salt, and pepper. Coat chicken pieces in egg, then toss in cornstarch mixture, making sure to tap off any excess.", "In a large, deep skillet over medium-high heat, heat 1/4 inch oil. Once oil is shimmering, fry chicken in batches until golden and crispy, 4 to 5 minutes. Drain on paper towels.", "In a small saucepan over medium heat, heat 1 tablespoon canola oil. Add garlic, ginger, and chili flakes and cook until fragrant, about 2 minutes. Whisk in orange juice, soy sauce, apple cider vinegar, chili sauce, and brown sugar. Bring to a simmer.", "Meanwhile, in a small bowl, make cornstarch slurry: Mix remaining tablespoon cornstarch with 2 tablespoons water. Slowly whisk slurry into sauce to thicken, and bring back to a simmer. Once sauce starts to look syrupy, about 5 minutes, remove from heat.", "Toss chicken with sauce and green onions. Serve over white rice." ],
+    "title" : "Sticky Orange Chicken"
+  }, {
+    "id" : "TSPC",
+    "ingredients" : [ "2 medium green peppers", "1/2 pound ground beef or lean ground turkey", "2 tablespoons chopped onion", "1 can (16 ounces) kidney beans, rinsed and drained", "1 can (8 ounces) tomato sauce", "3 tablespoons taco seasoning", "1/4 cup sour cream", "1/4 cup shredded cheddar cheese", "1/4 cup chopped tomato" ],
+    "isClickable" : true,
+    "source" : "https://www.tasteofhome.com/recipes/taco-stuffed-pepper-cups/",
+    "steps" : [ "Cut tops off peppers and remove seeds. In a large kettle, cook peppers in boiling water for 3-5 minutes. Drain and rinse in cold water; set aside.", "In a large skillet, cook beef and onion over medium heat until meat is no longer pink; drain. Stir in the beans, tomato sauce and taco seasoning; bring to a boil. Reduce heat; simmer, uncovered, for 5-6 minutes or until heated through.", "Spoon into peppers. Place in an ungreased 8-in. square baking dish. Bake, uncovered, at 350° for 10-12 minutes or until peppers are tender. Top with sour cream, cheese and tomatoes." ],
+    "title" : "Taco-Stuffed Pepper Cups"
+  } ],
+  "schools" : [ {
+    "courses" : [ "CSCI 1901 - Computer Programming 1", "CSCI 1933 - Intro to Algrothims & Data Structures", "CSCI 2011 - Discrete Structures", "CSCI 2021 - Machine Architecture & Organization", "CSCI 2033 - Elementary Computational Linear Algebra", "CSCI 3081 - Program Design & Development", "CSCI 4041 - Algrothims & Data Structures", "CSCI 4061 - Intro to Operating Systems", "CSCI 4131 - Internet Programming", "CSCI 4511 - Intro to Artificial Intelligence", "CSCI 5115 - User Interface Design", "CSCI 5117 - Developing the Interactive Web", "CSCI 5125 - Collaboration & Social Computing", "CSCI 5801 - Software Engineering 1" ],
+    "endYear" : "2017",
+    "imagePath" : "/assets/images/schools/UMN.png",
+    "intro" : "Courses:",
+    "link" : "https://twin-cities.umn.edu",
+    "major" : "Computer Science",
+    "name" : "University of Minnesota - Twin Cities",
+    "startYear" : "2013"
+  }, {
+    "courses" : "",
+    "endYear" : "2013",
+    "imagePath" : "/assets/images/schools/SHS.png",
+    "intro" : "",
+    "link" : "http://www.stoughton.k12.wi.us/page.cfm?p=508",
+    "major" : "",
+    "name" : "Stoughton Area High School",
+    "startYear" : "2009"
+  } ],
+  "socialmedia" : [ {
+    "imagePath" : "/assets/images/sites/twitter.png",
+    "link" : "https://twitter.com/TheNickKrantz",
+    "name" : "Twitter"
+  }, {
+    "imagePath" : "/assets/images/sites/facebook.png",
+    "link" : "https://www.facebook.com/thenickkrantz",
+    "name" : "Facebook"
+  }, {
+    "imagePath" : "/assets/images/sites/github.png",
+    "link" : "https://github.com/krantni",
+    "name" : "GitHub"
+  }, {
+    "imagePath" : "/assets/images/sites/instagram.png",
+    "link" : "https://www.instagram.com/n_krantz/",
+    "name" : "Instagram"
+  }, {
+    "imagePath" : "/assets/images/sites/linkedin.png",
+    "link" : "https://www.linkedin.com/in/nicholaskrantz",
+    "name" : "LinkedIn"
+  } ]
+}

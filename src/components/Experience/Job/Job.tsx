@@ -1,24 +1,46 @@
 import * as React from 'react';
+import styles from './Job.module.css';
 
 export interface Job {
-  descriptions: string[];
+  companyName: string;
+  startDate: string;
   endDate: string;
   imagePath: string;
-  intro: string;
-  jobTitle: string;
-  name: string;
-  startDate: string;
+  positions: Position[];
 }
 export interface JobProps {
   details: Job;
 }
 
+export interface Position {
+  title: string;
+  startDate: string;
+  endDate: string;
+  intro: string;
+  descriptions: string[];
+}
+
 const Job: React.SFC<JobProps> = props => {
-  const { endDate, jobTitle, startDate } = props.details;
+  const { endDate, startDate, companyName, positions } = props.details;
   return (
     <>
-      <div>{jobTitle}</div>
-      <div>{`${startDate} - ${endDate}`}</div>
+      <div className={styles.company}>
+        <div className={styles.companyHeader}>
+          <div className={styles.companyName}>{companyName}</div>
+          <div className={styles.dates}>{` ${startDate} - ${endDate} `}</div>
+        </div>
+
+        <br />
+        <div className={styles.positions}>
+          {positions.map((position, index) => {
+            return (
+              <div key={`position${index}`} className={styles.position}>
+                {position.title}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
