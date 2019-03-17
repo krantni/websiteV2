@@ -10,7 +10,8 @@
             "intro" : "",
             "title" : "Associate Developer",
             "startDate" : "November 2018",
-            "endDate" : "Present"
+            "endDate" : "Present",
+            "technologies": ["react", "redux", "typescript"]
         },
         {
             "descriptions" : [ 
@@ -21,7 +22,9 @@
             "intro" : "The Technology Leadership Development Program is an 18 month rotational program. Over the course of the program, I moved through three jobs (six months each), exposing myself to multiple aspects of Technology at Ameriprise.",
             "title" : "Technology Leadership Development Program",
             "startDate" : "July 2017",
-            "endDate" : "November 2018"
+            "endDate" : "November 2018",
+            "technologies":  ["react", "backbone","javascript", "powershell"]
+
         }
     ]
   },
@@ -36,14 +39,18 @@
             "intro" : "",
             "title" : "Undergraduate Teaching Assistant - CSCI 2041 - Advanced Programming Principles",
             "startDate" : "January 2016",
-            "endDate" : "May 2017"
+            "endDate" : "May 2017",
+            "technologies": ["clojure","ocaml"]
+
         },
         {
             "descriptions" : [ "Guided students through subjects including: implementation of stacks, queues, hash tables, binary trees, and searching/sorting algorithms.", "Quickly resolving conflicts and problem solving in weekly labs and office hours.", "Providing all neccessary support for students on course topics or general help with Python and Java." ],
             "intro" : "",
-            "title" : "Undergraduate Teaching Assistant for CSCI 1913 - Introduction to Algorithms & Data Structures",
+            "title" : "Undergraduate Teaching Assistant - CSCI 1913 - Introduction to Algorithms & Data Structures",
             "startDate" : "September 2014",
-            "endDate" : "December 2014"
+            "endDate" : "December 2014",
+            "technologies": ["python","java"]
+
         }
     ]
   }, {
@@ -56,7 +63,9 @@
         "intro" : "",
         "title" : "Engineering Tools Intern",
         "startDate" : "May 2016",
-        "endDate" : "August 2016"
+        "endDate" : "August 2016",
+        "technologies": ["javascript","html5"]
+
         }
     ]
   }, {
@@ -69,7 +78,9 @@
         "endDate" : "August 2015",
         "intro" : "",
         "title" : "Information Systems Intern",
-        "startDate" : "February 2015"
+        "startDate" : "February 2015",
+        "technologies": ["javascript","html5","css"]
+
     }]
   }, {
     "companyName" : "Stoughton Country Club",
@@ -81,7 +92,9 @@
         "endDate" : "August 2014",
         "intro" : "General golf course maintenance including:",
         "title" : "Greenskeeper",
-        "startDate" : "May 2010"
+        "startDate" : "May 2010",
+        "technologies": []
+
     }]
   }, {
     "companyName" : "Stoughton Cinema Cafe",
@@ -93,7 +106,8 @@
         "endDate" : "April 2010",
         "intro" : "",
         "jobTitle" : "Cook",
-        "startDate" : "Jun 2009"
+        "startDate" : "Jun 2009",
+        "technologies": []
     }]
   } ],
   "recipes" : [ {

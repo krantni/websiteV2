@@ -1,0 +1,21 @@
+.positionsDate {
+    font-size: .80em;
+}
+
+.descList {
+    list-style: none;
+}
+
+.hideDesc {
+    max-height: 0;
+    overflow-y: hidden;
+    transition-property: all;
+	transition-duration: .75s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.showDesc {
+    transition-property: all;
+	transition-duration: .75s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}

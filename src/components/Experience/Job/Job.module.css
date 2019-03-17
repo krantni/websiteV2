@@ -19,5 +19,6 @@
     padding-left: 5px;
 }
 
-.position{
+.positions {
+    grid-column-start: 2;
 }
