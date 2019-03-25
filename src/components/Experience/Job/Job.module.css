@@ -1,6 +1,6 @@
 .company {
     display:grid;
-    grid-template-columns: 10px auto;
+    grid-template-columns: 20px auto;
 }
 
 .companyHeader {

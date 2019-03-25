@@ -25,7 +25,13 @@ const Job: React.SFC<JobProps> = props => {
       </div>
       <div className={styles.positions}>
         {positions.map((position, index) => {
-          return <Position key={`position${index}`} position={position} />;
+          return (
+            <Position
+              key={`position${index}`}
+              position={position}
+              positionIndex={index}
+            />
+          );
         })}
       </div>
     </div>

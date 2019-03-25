@@ -1,3 +1,8 @@
+.container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .positionsDate {
     font-size: .80em;
 }
@@ -6,16 +11,53 @@
     list-style: none;
 }
 
-.hideDesc {
-    max-height: 0;
-    overflow-y: hidden;
-    transition-property: all;
-	transition-duration: .75s;
-    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+.techImages{
+    height: 2rem;
+    width: 2rem;
+    margin: 0px 5px;
 }
 
-.showDesc {
-    transition-property: all;
-	transition-duration: .75s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+.positionHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.positionHeading div:nth-child(2) {
+    flex:1;
+} 
+
+.arrow {
+    height: 2em;
+    width: 2em;
+    margin-right: 10px;
+}
+
+.arrow > .rotateUp {
+ animation: rotate-up .5s;
+ animation-fill-mode: forwards;      
+}
+
+@keyframes rotate-up {
+    from {
+     transform: rotate(0deg);
+    }
+   
+    to {
+     transform: rotate(-90deg);
+    }
+}
+
+.arrow > .rotateDown {
+ animation: rotate-down .5s;
+ animation-fill-mode: forwards;      
+}
+
+@keyframes rotate-down {
+    from {
+     transform: rotate(-90deg);
+    }
+   
+    to {
+     transform: rotate(0deg);
+    }
 }
