@@ -3,7 +3,7 @@ import { School } from './School/School';
 import SchoolElement from './School';
 import styles from './Education.module.css';
 
-import jsonData from '../../data/data.json';
+import jsonData from 'data/data.json';
 
 const Education = () => {
   const [education, setEducation] = React.useState<School[] | null>([]);

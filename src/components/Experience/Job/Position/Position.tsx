@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './Position.module.css';
-import imagePaths from '../../../../constants/imagePaths';
-import { ReactComponent as Arrow } from '../../../../images/downArrow.svg';
+import imagePaths from 'constants/imagePaths';
+import { ReactComponent as Arrow } from 'images/downArrow.svg';
 import AnimateHeight from 'react-animate-height';
 
 export interface PositionProps {

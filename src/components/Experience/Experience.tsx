@@ -3,7 +3,7 @@ import { Job } from './Job/Job';
 import JobElement from './Job';
 import styles from './Experience.module.css';
 
-import jsonData from '../../data/data.json';
+import jsonData from 'data/data.json';
 
 const Experience = () => {
   const [experiences, setExperience] = React.useState<Job[] | null>([]);
