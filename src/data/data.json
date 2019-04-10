@@ -5,7 +5,9 @@
     "endDate" : "Present",
     "positions" : [
         {
-            "descriptions" : [],
+            "descriptions" : [
+              "Front End development utilizing React, Redux and Typescript"
+            ],
             "intro" : "",
             "title" : "Associate Developer",
             "startDate" : "November 2018",

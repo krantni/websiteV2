@@ -1,6 +1,13 @@
-html, body {
+html {
   height: 100%;
-  background-color: rgb(57, 57, 59);
+}
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
   color: white;
 }
 
@@ -14,9 +21,54 @@ html, body {
   grid-column-start: content;
 }
 
+.sectionIcons{
+  grid-column-start: content;
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+
+}
+.iconText{
+  opacity: 0;
+  display: none;
+}
+
+.iconHolder {
+  height: 50px;
+  width: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.iconHolder:hover > .icon{
+  animation: fadeOut 1s forwards;
+  display: none;
+}
+
+.iconHolder:hover > .iconText{
+  display: flex;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 .experience {
   grid-column-start: content;
-
 }
 
 .education {
