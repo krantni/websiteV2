@@ -12,25 +12,55 @@ body {
 }
 
 .container {
+  height: 100%;
   display: grid;
   grid-template-columns: 20% [content] auto 20%;
-  grid-template-rows: 85px auto auto;
+  grid-template-rows: 85px auto 85px;
 }
 
 .header {
   grid-column-start: content;
 }
 
-.sectionIcons{
+.content{
   grid-column-start: content;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contentGrid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.contentRow{
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.icon{
-  height: 50px;
-  width: 50px;
+.sectionIconsGrid{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 140px 140px 140px;
+  grid-template-rows: repeat(2, 140px);
 
+}
+
+.sectionIconsRow{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px 140px 140px;
+  grid-template-rows: auto;
+
+}
+
+.icon{
+  height: 100px;
+  width: 100px;
 }
 .iconText{
   opacity: 0;
@@ -38,13 +68,12 @@ body {
 }
 
 .iconHolder {
-  height: 50px;
-  width: 50px;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
   display: flex;
   cursor: pointer;
+  justify-content: center;
 }
 
 .iconHolder:hover > .icon{
@@ -57,6 +86,16 @@ body {
   animation: fadeIn 1s forwards;
 }
 
+.experience {
+  grid-column-start: content;
+  animation: fadeIn 1s forwards;
+  width: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
     to { opacity: 1; }
@@ -67,21 +106,23 @@ body {
     to { opacity: 0; }
 }
 
-.experience {
-  grid-column-start: content;
-}
-
-.education {
-  grid-column-start: content;
-}
-
 @media (max-width: 700px) {
   .container {
     grid-template-columns: 5% [content] auto 5%;
   }
 }
+@media (max-width: 600px) {
+  .iconHolder {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 @media (max-width: 375px) {
   .container {
     grid-template-columns: 2% [content] auto 2%;
+  }
+  .icon{
+    width: 25px;
+    height: 25px;
   }
 }
