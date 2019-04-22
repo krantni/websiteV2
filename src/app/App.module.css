@@ -22,24 +22,22 @@ body {
   grid-column-start: content;
 }
 
-.content{
+.contentGrid{
   grid-column-start: content;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.contentGrid{
-  width: 100%;
-  display: flex;
   justify-content: center;
 
 }
 
-.contentRow{
-  width: 100%;
+.contentRow {
+  grid-column-start: content;
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
 }
 
 .sectionIconsGrid{
@@ -86,14 +84,10 @@ body {
   animation: fadeIn 1s forwards;
 }
 
-.experience {
+.sectionContent {
   grid-column-start: content;
   animation: fadeIn 1s forwards;
   width: 100%;
-}
-
-.hidden{
-  display: none;
 }
 
 @keyframes fadeIn {

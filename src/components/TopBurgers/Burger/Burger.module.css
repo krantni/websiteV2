@@ -1,0 +1,23 @@
+.container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burgerName {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+.number {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+.marginLeft {
+    margin-left: 25px;
+}
+
+a{
+    color: #ffffff;
+}
