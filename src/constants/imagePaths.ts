@@ -1,16 +1,16 @@
 const imagePaths: ImagePaths = {
-  react: 'images/react.svg',
-  redux: 'images/redux.svg',
-  typescript: 'images/typescript.svg',
-  html5: 'images/html5.svg',
-  css: 'images/css.svg',
-  javascript: 'images/javascript.svg',
-  clojure: 'images/clojure.svg',
-  ocaml: 'images/ocaml.svg',
-  java: 'images/java.svg',
-  python: 'images/python.svg',
-  backbone: 'images/backbone.svg',
-  powershell: 'images/powershell.svg',
+  react: 'images/tech/react.svg',
+  redux: 'images/tech/redux.svg',
+  typescript: 'images/tech/typescript.svg',
+  html5: 'images/tech/html5.svg',
+  css: 'images/tech/css.svg',
+  javascript: 'images/tech/javascript.svg',
+  clojure: 'images/tech/clojure.svg',
+  ocaml: 'images/tech/ocaml.svg',
+  java: 'images/tech/java.svg',
+  python: 'images/tech/python.svg',
+  backbone: 'images/tech/backbone.svg',
+  powershell: 'images/tech/powershell.svg',
 };
 
 interface ImagePaths {

@@ -1,7 +1,7 @@
 const links: URLS = {
-  linkedIn: 'https://twitter.com/nick__krantz',
+  twitter: 'https://twitter.com/nick__krantz',
   github: 'https://github.com/krantni',
-  twitter: 'https://www.linkedin.com/in/nicholaskrantz/',
+  linkedIn: 'https://www.linkedin.com/in/nicholaskrantz/',
 };
 
 export interface URLS {
