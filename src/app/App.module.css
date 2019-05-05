@@ -63,6 +63,7 @@ body {
 .iconText{
   opacity: 0;
   display: none;
+  font-size: 200%;
 }
 
 .iconHolder {

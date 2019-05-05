@@ -68,11 +68,11 @@ const App = () => {
             <Education />
           </div>
         )}
-        {/* {sectionInView === 'burgers' && ( */}
+        {sectionInView === 'burgers' && (
         <div className={styles.sectionContent}>
           <TopBurgers />
         </div>
-        {/* )} */}
+        )}
       </div>
     </div>
   );
