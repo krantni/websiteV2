@@ -14,25 +14,33 @@ body {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 20% [content] auto 20%;
-  grid-template-rows: 85px auto 85px;
+  grid-template-columns: [sidebar] 15% [content] auto 20%;
+  grid-template-rows: [first] 20% auto;
+  grid-row-gap: 35px;
 }
 
 .header {
-  grid-column-start: content;
+  grid-column-start: sidebar;
+  grid-row-start: first;
+}
+
+.sideBar {
+  grid-column-start: sidebar;
+  grid-row-start: 2 / -1;
 }
 
 .contentGrid{
   grid-column-start: content;
+  grid-row: 2/-1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .contentRow {
   grid-column-start: content;
+  grid-row: 2/-1;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
