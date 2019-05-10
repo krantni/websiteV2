@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
 }
 .menu >div {
     max-width: 75%;
@@ -15,9 +16,33 @@
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.iconHolder:hover > .decorativeLine{
+    background-image: linear-gradient(90deg, #617487 0%, #000000 50%);
+}
+.iconHolder:hover > .iconText{
+    font-size: 1.65em;
 }
 
 .icon{
     height: 50px;
     width: 50px;
+}
+
+.iconText{
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.decorativeLine{
+    margin-top: 5px;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #000000 0%, #617487 50%);
+    transition: 0.5s;
+
 }
