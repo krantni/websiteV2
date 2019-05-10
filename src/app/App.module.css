@@ -15,10 +15,11 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: [sidebar] 15% [content] auto 20%;
-  grid-template-rows: [first] 20% auto;
+  grid-template-rows: [first] 25% auto;
 }
 
 .header {
+  padding-top: 20px;
   grid-column-start: sidebar;
   grid-row-start: first;
   background-color: #0C2032;
@@ -32,8 +33,10 @@ body {
 }
 
 .sectionContent {
+  padding-top: 20px;
+  padding-left: 30px;
   grid-column-start: content;
-  grid-row-start: 2 / -1;
+  grid-row: 1 / -1;
   animation: fadeIn 1s forwards;
   width: 100%;
 }
