@@ -29,72 +29,9 @@ body {
   grid-row-start: 2 / -1;
 }
 
-.contentGrid{
-  grid-column-start: content;
-  grid-row: 2/-1;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contentRow {
-  grid-column-start: content;
-  grid-row: 2/-1;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-}
-
-.sectionIconsGrid{
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 140px 140px 140px;
-  grid-template-rows: repeat(2, 140px);
-
-}
-
-.sectionIconsRow{
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 140px 140px 140px 140px 140px 140px;
-  grid-template-rows: auto;
-
-}
-
-.icon{
-  height: 100px;
-  width: 100px;
-}
-.iconText{
-  opacity: 0;
-  display: none;
-  font-size: 200%;
-}
-
-.iconHolder {
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-}
-
-.iconHolder:hover > .icon{
-  animation: fadeOut 1s forwards;
-  display: none;
-}
-
-.iconHolder:hover > .iconText{
-  display: flex;
-  animation: fadeIn 1s forwards;
-}
-
 .sectionContent {
   grid-column-start: content;
+  grid-row-start: 2 / -1;
   animation: fadeIn 1s forwards;
   width: 100%;
 }

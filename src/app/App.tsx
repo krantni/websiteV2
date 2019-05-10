@@ -6,11 +6,10 @@ import TopBurgers from '../components/TopBurgers';
 
 import styles from './App.module.css';
 import SideBarMenu from '../components/SideBarMenu';
+import { Sections } from '../constants/sections';
 
 const App = () => {
-  const [sectionInView, showSection] = React.useState<
-    '' | 'projects' | 'resume' | 'burgers'
-  >('');
+  const [visibleSection, openSection] = React.useState<Sections>('');
 
   return (
     <div className={styles.container}>
@@ -18,20 +17,17 @@ const App = () => {
         <ProfieImage />
       </div>
       <div className={styles.sideBar}>
-        <SideBarMenu />
+        <SideBarMenu openSection={(section: Sections) => openSection(section)} />
       </div>
-
-      {sectionInView === 'resume' && (
-        <div className={styles.sectionContent}>
-          <Experience />
-          <Education />
-        </div>
-      )}
-      {sectionInView === 'burgers' && (
-        <div className={styles.sectionContent}>
-          <TopBurgers />
-        </div>
-      )}
+      <div className={styles.sectionContent}>
+        {visibleSection === 'resume' && (
+          <>
+            <Experience />
+            <Education />
+          </>
+        )}
+        {visibleSection === 'burgers' && <TopBurgers />}
+      </div>
     </div>
   );
 };

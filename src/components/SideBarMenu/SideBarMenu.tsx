@@ -8,19 +8,24 @@ import linkedInIcon from '../../images/icons/linkedin.svg';
 import twitterIcon from '../../images/icons/twitter.svg';
 import githubIcon from '../../images/icons/github.svg';
 import links from '../../constants/links';
+import { Sections } from '../../constants/sections';
 
-const SideBarMenu = () => {
+export interface Props {
+  openSection: (section: Sections) => void;
+}
+
+const SideBarMenu = ({ openSection }: Props) => {
   return (
     <div className={styles.menu}>
-      <div className={styles.iconHolder} onClick={() => {}}>
+      <div className={styles.iconHolder} onClick={() => openSection('projects')}>
         <img className={styles.icon} src={codeIcon} alt="Projects" />
         <div className={styles.iconText}>Projects</div>
       </div>
-      <div className={styles.iconHolder} onClick={() => {}}>
+      <div className={styles.iconHolder} onClick={() => openSection('resume')}>
         <img className={styles.icon} src={resumeIcon} alt="Resume" />
         <div className={styles.iconText}>Resume</div>
       </div>
-      <div className={styles.iconHolder} onClick={() => {}}>
+      <div className={styles.iconHolder} onClick={() => openSection('burgers')}>
         <img className={styles.icon} src={burgerIcon} alt="Burgers" />
         <div className={styles.iconText}>Burgers</div>
       </div>
