@@ -17,7 +17,10 @@ const App = () => {
         <ProfieImage />
       </div>
       <div className={styles.sideBar}>
-        <SideBarMenu openSection={(section: Sections) => openSection(section)} selected={visibleSection} />
+        <SideBarMenu
+          openSection={(section: Sections) => openSection(section)}
+          selected={visibleSection}
+        />
       </div>
       <div className={styles.sectionContent}>
         {visibleSection === 'resume' && (

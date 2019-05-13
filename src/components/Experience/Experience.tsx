@@ -19,7 +19,9 @@ const Experience = () => {
 
   return (
     <>
-      <div className={styles.experience}>Experience</div>
+      <div className={styles.header}>
+        <span className={styles.experience}>Experience</span>
+      </div>
       {experiences &&
         experiences.map((job, index) => {
           return <JobElement details={job} key={`job${index}`} />;

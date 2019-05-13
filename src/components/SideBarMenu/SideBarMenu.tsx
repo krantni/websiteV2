@@ -16,23 +16,38 @@ export interface Props {
 }
 
 const SideBarMenu = ({ openSection, selected }: Props) => {
-    const isSelected = (section: Sections) =>{
-        return section === selected;
-    }
+  const isSelected = (section: Sections) => {
+    return section === selected;
+  };
 
   return (
     <div className={styles.menu}>
-      <div className={styles.iconHolder + " " +  (isSelected('projects') ? styles.selected : '')} onClick={() => openSection('projects')}>
+      <div
+        className={
+          styles.iconHolder + ' ' + (isSelected('projects') ? styles.selected : '')
+        }
+        onClick={() => openSection('projects')}
+      >
         <img className={styles.icon} src={codeIcon} alt="Projects" />
         <div className={styles.iconText}>Projects</div>
         <span className={styles.decorativeLine} />
       </div>
-      <div className={styles.iconHolder + " " +  (isSelected('resume') ? styles.selected : '')} onClick={() => openSection('resume')}>
+      <div
+        className={
+          styles.iconHolder + ' ' + (isSelected('resume') ? styles.selected : '')
+        }
+        onClick={() => openSection('resume')}
+      >
         <img className={styles.icon} src={resumeIcon} alt="Resume" />
         <div className={styles.iconText}>Resume</div>
         <span className={styles.decorativeLine} />
       </div>
-      <div className={styles.iconHolder + " " + (isSelected('burgers') ? styles.selected : '')} onClick={() => openSection('burgers')}>
+      <div
+        className={
+          styles.iconHolder + ' ' + (isSelected('burgers') ? styles.selected : '')
+        }
+        onClick={() => openSection('burgers')}
+      >
         <img className={styles.icon} src={burgerIcon} alt="Burgers" />
         <div className={styles.iconText}>Burgers</div>
         <span className={styles.decorativeLine} />

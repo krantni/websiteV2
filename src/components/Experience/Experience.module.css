@@ -1,7 +1,15 @@
-.experience {
+.header {
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.experience {
+    text-align: center;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2.5em;
     padding-bottom: 10px;
+    background-image: linear-gradient(90deg, #617487 0%, #617487 100%);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
 }

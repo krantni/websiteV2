@@ -14,7 +14,7 @@ body {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: [sidebar] 15% [content] auto 20%;
+  grid-template-columns: [sidebar] 15% [content] auto 5%;
   grid-template-rows: [first] 25% auto;
 }
 
