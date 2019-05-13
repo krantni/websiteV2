@@ -141,7 +141,7 @@
     "city":"Chicago",
     "state":"IL",
     "ingredients":"Certified Angus Beef Prime on Grilled Parmesan Cheese Bread with Lots of Cheddar Cheese, Grilled Onions and Thousand Island Dressing.",
-    "rank":"0"
+    "rank":"1"
   },
     {
     "name":"Parlour Burger",
@@ -150,7 +150,7 @@
     "city":"St. Paul",
     "state":"MN",
     "ingredients":"Ribeye, Chuck, Brisket, White American Cheese, Egg Bun",
-    "rank":"1"
+    "rank":"0"
   },
     {
     "name":"Lobster Lucy",
