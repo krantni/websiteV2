@@ -32,7 +32,9 @@ const Experience = () => {
 
   return (
     <>
-      <div className={styles.topBurgers}>Top Burgers</div>
+      <div className={styles.header}>
+        <span className={styles.topBurgers}>Top Burgers</span>
+      </div>
       {burgers &&
         burgers.sort(sortByBurgerRank).map((burger, index) => {
           return <BurgerElement burger={burger} key={burger.name} index={index + 1} />;
