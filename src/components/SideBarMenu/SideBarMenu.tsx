@@ -52,14 +52,14 @@ const SideBarMenu = ({ openSection, selected }: Props) => {
         <div className={styles.iconText}>Experience</div>
         <span className={styles.decorativeLine} />
       </div>
-      <div className={styles.iconHolder} onClick={() => window.open(links.linkedIn)}>
-        <img className={styles.icon} src={linkedInIcon} alt="LinkedIn Icon" />
-        <div className={styles.iconText}>LinkedIn</div>
-        <span className={styles.decorativeLine} />
-      </div>
       <div className={styles.iconHolder} onClick={() => window.open(links.github)}>
         <img className={styles.icon} src={githubIcon} alt="GitHub" />
         <div className={styles.iconText}>GitHub</div>
+        <span className={styles.decorativeLine} />
+      </div>
+      <div className={styles.iconHolder} onClick={() => window.open(links.linkedIn)}>
+        <img className={styles.icon} src={linkedInIcon} alt="LinkedIn Icon" />
+        <div className={styles.iconText}>LinkedIn</div>
         <span className={styles.decorativeLine} />
       </div>
       <div className={styles.iconHolder} onClick={() => window.open(links.twitter)}>

@@ -21,6 +21,13 @@ const App = () => {
         <span>Nick Krantz</span>
       </div>
       <div className={styles.sideBar}>
+        {visibleSection === '' && (
+          <div className={styles.intro}>
+            You're here, might as well stay awhile. Click below to learn more about me!
+            Write ups for projects I've done, the best burgers I've had, my professional
+            experience, and links to my GitHub, LinkedIn and Twitter!
+          </div>
+        )}
         <SideBarMenu
           openSection={(section: Sections) => openSection(section)}
           selected={visibleSection}
@@ -35,11 +42,6 @@ const App = () => {
         )}
         {visibleSection === 'burgers' && <TopBurgers />}
         {visibleSection === 'projects' && <Projects />}
-        {visibleSection === '' && (
-          <div className={styles.intro}>
-            
-          </div>
-        )}
       </div>
     </div>
   );

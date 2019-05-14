@@ -56,6 +56,12 @@ body {
   animation: fadeIn 1s forwards;
   width: 100%;
 }
+.intro {
+  animation: fadeIn 1s forwards;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 @keyframes fadeIn {
   from { opacity: 0; }
