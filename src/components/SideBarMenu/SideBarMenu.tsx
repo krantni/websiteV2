@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './SideBarMenu.module.css';
 
 import burgerIcon from '../../images/icons/burger.svg';
-import resumeIcon from '../../images/icons/resume.svg';
+import experienceIcon from '../../images/icons/experience.svg';
 import codeIcon from '../../images/icons/code.svg';
 import linkedInIcon from '../../images/icons/linkedin.svg';
 import twitterIcon from '../../images/icons/twitter.svg';
@@ -34,22 +34,22 @@ const SideBarMenu = ({ openSection, selected }: Props) => {
       </div>
       <div
         className={
-          styles.iconHolder + ' ' + (isSelected('resume') ? styles.selected : '')
-        }
-        onClick={() => openSection('resume')}
-      >
-        <img className={styles.icon} src={resumeIcon} alt="Resume" />
-        <div className={styles.iconText}>Resume</div>
-        <span className={styles.decorativeLine} />
-      </div>
-      <div
-        className={
           styles.iconHolder + ' ' + (isSelected('burgers') ? styles.selected : '')
         }
         onClick={() => openSection('burgers')}
       >
         <img className={styles.icon} src={burgerIcon} alt="Burgers" />
         <div className={styles.iconText}>Burgers</div>
+        <span className={styles.decorativeLine} />
+      </div>
+      <div
+        className={
+          styles.iconHolder + ' ' + (isSelected('experience') ? styles.selected : '')
+        }
+        onClick={() => openSection('experience')}
+      >
+        <img className={styles.icon} src={experienceIcon} alt="Experience" />
+        <div className={styles.iconText}>Experience</div>
         <span className={styles.decorativeLine} />
       </div>
       <div className={styles.iconHolder} onClick={() => window.open(links.linkedIn)}>

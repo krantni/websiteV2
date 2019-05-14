@@ -1,1 +1,1 @@
-export type Sections = '' | 'projects' | 'resume' | 'burgers';
+export type Sections = '' | 'projects' | 'experience' | 'burgers';

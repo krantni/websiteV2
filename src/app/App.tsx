@@ -26,7 +26,7 @@ const App = () => {
         />
       </div>
       <div className={styles.sectionContent}>
-        {visibleSection === 'resume' && (
+        {visibleSection === 'experience' && (
           <>
             <Experience />
             <Education />
