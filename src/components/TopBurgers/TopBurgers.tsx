@@ -35,6 +35,12 @@ const Experience = () => {
       <div className={styles.header}>
         <span className={styles.topBurgers}>Top Burgers</span>
       </div>
+      <div className={styles.intro}>
+        Ever have a burger and I think: "This is the best burger I've ever had"? I do all
+        the time, so now I've decided to keep track. Here's my list of the best burgers
+        I've ever had. Feel free to send me a tweet if you think you've had some burgers
+        that are better!
+      </div>
       {burgers &&
         burgers.sort(sortByBurgerRank).map((burger, index) => {
           return <BurgerElement burger={burger} key={burger.name} index={index + 1} />;

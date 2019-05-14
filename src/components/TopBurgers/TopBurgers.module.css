@@ -13,3 +13,8 @@
     background-repeat: no-repeat;
     background-size: 100% 2px;
 }
+
+.intro {
+    width: 50%;
+    margin: 0 auto;
+}
