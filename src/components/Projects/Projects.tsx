@@ -15,6 +15,13 @@ const Projects = () => {
         they're code related, you can view the source code on my github!
       </div>
       <div className={styles.project}>
+        <div className={styles.title}>This Website (The one you're on right now)</div>
+        <div className={styles.text}>
+          Coming soon... once I finish this website..
+        </div>
+        
+      </div>
+      <div className={styles.project}>
         <div className={styles.title}>Website #1</div>
         <div className={styles.text}>
           I had a couple months between graduating college and starting my job, so I
