@@ -15,13 +15,13 @@
 }
 
 .intro {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 .project {
     width: 80%;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 .title {
     width: 100%;
@@ -49,3 +49,18 @@
     display:block;
     margin:auto;
 }
+
+@media (max-width: 1300px) {
+    .project {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .projectImageHolder > img {
+        width: 75%;
+        display:block;
+        margin: auto;
+    }
+
+  }
+
