@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ProfieImage from '../components/ProfieImage';
+import ProfileImage from '../components/ProfileImage';
 import Experience from '../components/Experience';
 import Education from '../components/Education';
 import TopBurgers from '../components/TopBurgers';
@@ -7,6 +7,7 @@ import TopBurgers from '../components/TopBurgers';
 import styles from './App.module.css';
 import SideBarMenu from '../components/SideBarMenu';
 import { Sections } from '../constants/sections';
+import Projects from '../components/Projects';
 
 const App = () => {
   const [visibleSection, openSection] = React.useState<Sections>('');
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <ProfieImage />
+        <ProfileImage />
       </div>
       <div className={styles.name}>
         <span>Nick Krantz</span>
@@ -33,6 +34,7 @@ const App = () => {
           </>
         )}
         {visibleSection === 'burgers' && <TopBurgers />}
+        {visibleSection === 'projects' && <Projects />}
       </div>
     </div>
   );

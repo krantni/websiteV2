@@ -1,9 +1,9 @@
 import * as React from 'react';
-import styles from './ProfieImage.module.css';
+import styles from './ProfileImage.module.css';
 
 import me from '../../images/me.png';
 
-const ProfieImage = () => {
+const ProfileImage = () => {
   return (
     <div className={styles.imageHolder}>
       <img className={styles.profileImage} src={me} />
@@ -11,4 +11,4 @@ const ProfieImage = () => {
   );
 };
 
-export default ProfieImage;
+export default ProfileImage;

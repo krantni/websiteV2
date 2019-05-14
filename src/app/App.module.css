@@ -27,7 +27,7 @@ body {
 
 .name {
   grid-column-start: sidebar;
-  align-items: start;
+  align-items: flex-start;
   background-color: #0C2032;
   display: flex;
   flex-wrap: wrap;

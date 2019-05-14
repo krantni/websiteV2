@@ -35,7 +35,7 @@
     "endDate" : "May 2017",
     "positions" : [
         {
-            "descriptions" : [ "Lead office hours and lab sessions on course topics. Subjects including: principles and techniques for creating robust, modular programs and organzing data/computations around types.", "Providing general support and one-to-one assistance for students with covered material or more general help with functional programming in Clojure and OCaml." ],
+            "descriptions" : [ "Lead office hours and lab sessions on course topics. Subjects including: principles and techniques for creating robust, modular programs and organizing data/computations around types.", "Providing general support and one-to-one assistance for students with covered material or more general help with functional programming in Clojure and OCaml." ],
             "intro" : "",
             "title" : "Undergraduate Teaching Assistant - CSCI 2041 - Advanced Programming Principles",
             "startDate" : "January 2016",
@@ -44,7 +44,7 @@
 
         },
         {
-            "descriptions" : [ "Guided students through subjects including: implementation of stacks, queues, hash tables, binary trees, and searching/sorting algorithms.", "Quickly resolving conflicts and problem solving in weekly labs and office hours.", "Providing all neccessary support for students on course topics or general help with Python and Java." ],
+            "descriptions" : [ "Guided students through subjects including: implementation of stacks, queues, hash tables, binary trees, and searching/sorting algorithms.", "Quickly resolving conflicts and problem solving in weekly labs and office hours.", "Providing all necessary support for students on course topics or general help with Python and Java." ],
             "intro" : "",
             "title" : "Undergraduate Teaching Assistant - CSCI 1913 - Introduction to Algorithms & Data Structures",
             "startDate" : "September 2014",
@@ -136,7 +136,7 @@
   "burgers":[
     {
     "name":"Grand Lux Burger Melt",
-    "resturant":"Grand Lux Cafe",
+    "restaurant":"Grand Lux Cafe",
     "website":"https://www.grandluxcafe.com/",
     "city":"Chicago",
     "state":"IL",
@@ -145,7 +145,7 @@
   },
     {
     "name":"Parlour Burger",
-    "resturant":"Parlour Bar",
+    "restaurant":"Parlour Bar",
     "website":"https://www.parlourbar.com/locations-st-paul",
     "city":"St. Paul",
     "state":"MN",
@@ -154,7 +154,7 @@
   },
     {
     "name":"Lobster Lucy",
-    "resturant":"Smack Shack",
+    "restaurant":"Smack Shack",
     "website":"http://www.smack-shack.com",
     "city":"Minneapolis",
     "state":"MN",

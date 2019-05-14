@@ -3,7 +3,7 @@ import styles from './Burger.module.css';
 
 export interface Burger {
   name: string;
-  resturant: string;
+  restaurant: string;
   website: string;
   city: string;
   state: string;
@@ -25,9 +25,9 @@ const Burger: React.SFC<BurgerProps> = props => {
           {burger.name}
         </div>
         <div className={styles.marginLeft}>
-          <div className={styles.resturant}>
+          <div className={styles.restaurant}>
             <a href={burger.website} target="_blank">
-              {burger.resturant} -{' '}
+              {burger.restaurant} -{' '}
               <span>
                 {burger.city}, {burger.state}
               </span>
