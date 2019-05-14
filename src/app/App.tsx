@@ -13,7 +13,7 @@ const App = () => {
   const [visibleSection, openSection] = React.useState<Sections>('');
 
   return (
-    <div className={styles.container}>
+    <div className={visibleSection === '' ? styles.homeContainer : styles.container}>
       <div className={styles.header}>
         <ProfileImage />
       </div>
@@ -35,6 +35,11 @@ const App = () => {
         )}
         {visibleSection === 'burgers' && <TopBurgers />}
         {visibleSection === 'projects' && <Projects />}
+        {visibleSection === '' && (
+          <div className={styles.intro}>
+            
+          </div>
+        )}
       </div>
     </div>
   );

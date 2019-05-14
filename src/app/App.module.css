@@ -11,6 +11,13 @@ body {
   color: white;
 }
 
+.homeContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: [sidebar] 100%;
+  grid-template-rows: [first] 25% [second] 70px auto;
+}
+
 .container {
   height: 100%;
   display: grid;
