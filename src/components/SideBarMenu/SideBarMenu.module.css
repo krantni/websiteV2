@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
 }
 .menu >div {
     max-width: 75%;

@@ -15,21 +15,30 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: [sidebar] 15% [content] auto 5%;
-  grid-template-rows: [first] 25% auto;
+  grid-template-rows: [first] 25% [second] 70px auto;
 }
 
 .header {
-  padding-top: 20px;
+  padding: 20px;
   grid-column-start: sidebar;
   grid-row-start: first;
   background-color: #0C2032;
 }
 
+.name {
+  grid-column-start: sidebar;
+  align-items: start;
+  background-color: #0C2032;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2em;
+}
+
 .sideBar {
   grid-column-start: sidebar;
-  grid-row-start: 2 / -1;
+  grid-row-start: 3 / -1;
   background-color: #0C2032;
-
 }
 
 .sectionContent {

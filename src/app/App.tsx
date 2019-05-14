@@ -16,6 +16,9 @@ const App = () => {
       <div className={styles.header}>
         <ProfieImage />
       </div>
+      <div className={styles.name}>
+        <span>Nick Krantz</span>
+      </div>
       <div className={styles.sideBar}>
         <SideBarMenu
           openSection={(section: Sections) => openSection(section)}
