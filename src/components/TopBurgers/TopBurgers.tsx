@@ -3,20 +3,11 @@ import { Burger } from './Burger/Burger';
 import BurgerElement from './Burger';
 import styles from './TopBurgers.module.css';
 
-import jsonData from 'data/data.json';
+export interface Props {
+  burgers: Burger[] | null;
+}
 
-const Experience = () => {
-  const [burgers, setBurgers] = React.useState<Burger[] | null>([]);
-
-  React.useEffect(() => {
-    setBurgers(JSON.parse(JSON.stringify(jsonData)).burgers);
-    //   fetch('https://angular-b6d9c.firebaseio.com/burgers.json')
-    //     .then(results => results.json())
-    //     .then((data: Job[]) => {
-    //       setBurgers(data);
-    //     });
-  }, []);
-
+const TopBurgers = ({ burgers }: Props) => {
   const sortByBurgerRank = (a: Burger, b: Burger) => {
     // tslint:disable: radix
     const rankA = parseInt(a.rank);
@@ -49,4 +40,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default TopBurgers;

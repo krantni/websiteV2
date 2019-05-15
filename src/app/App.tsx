@@ -8,9 +8,33 @@ import styles from './App.module.css';
 import SideBarMenu from '../components/SideBarMenu';
 import { Sections } from '../constants/sections';
 import Projects from '../components/Projects';
+import { Burger } from '../components/TopBurgers/Burger/Burger';
+import { Job } from '../components/Experience/Job/Job';
+import { School } from '../components/Education/School/School';
 
 const App = () => {
   const [visibleSection, openSection] = React.useState<Sections>('');
+  const [burgers, setBurgers] = React.useState<Burger[] | null>([]);
+  const [jobs, setExperience] = React.useState<Job[] | null>([]);
+  const [schools, setEducation] = React.useState<School[] | null>([]);
+
+  React.useEffect(() => {
+    fetch('https://website-nk.firebaseio.com/burgers.json')
+      .then(results => results.json())
+      .then((data: Burger[]) => {
+        setBurgers(data);
+      });
+    fetch('https://website-nk.firebaseio.com/jobs.json')
+      .then(results => results.json())
+      .then((data: Job[]) => {
+        setExperience(data);
+      });
+    fetch('https://website-nk.firebaseio.com/schools.json')
+      .then(results => results.json())
+      .then((data: School[]) => {
+        setEducation(data);
+      });
+  }, []);
 
   return (
     <div className={visibleSection === '' ? styles.homeContainer : styles.container}>
@@ -36,11 +60,11 @@ const App = () => {
       <div className={styles.sectionContent}>
         {visibleSection === 'experience' && (
           <>
-            <Experience />
-            <Education />
+            <Experience experiences={jobs} />
+            <Education schools={schools} />
           </>
         )}
-        {visibleSection === 'burgers' && <TopBurgers />}
+        {visibleSection === 'burgers' && <TopBurgers burgers={burgers} />}
         {visibleSection === 'projects' && <Projects />}
       </div>
     </div>

@@ -3,20 +3,11 @@ import { Job } from './Job/Job';
 import JobElement from './Job';
 import styles from './Experience.module.css';
 
-import jsonData from 'data/data.json';
+export interface Props {
+  experiences: Job[] | null;
+}
 
-const Experience = () => {
-  const [experiences, setExperience] = React.useState<Job[] | null>([]);
-
-  React.useEffect(() => {
-    setExperience(JSON.parse(JSON.stringify(jsonData)).jobs);
-    //   fetch('https://angular-b6d9c.firebaseio.com/jobs.json')
-    //     .then(results => results.json())
-    //     .then((data: Job[]) => {
-    //       setExperience(data);
-    //     });
-  }, []);
-
+const Experience = ({ experiences }: Props) => {
   return (
     <>
       <div className={styles.header}>

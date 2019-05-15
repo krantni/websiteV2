@@ -33,18 +33,20 @@ const Position: React.SFC<PositionProps> = props => {
             {position.startDate} - {position.endDate}
           </span>
         </div>
-        <div>
-          {position.technologies.map((tech, index) => {
-            const imagePath = imagePaths[tech];
-            return (
-              <img
-                key={positionIndex + index}
-                className={styles.techImages}
-                src={require(`../../../../${imagePath}`)}
-              />
-            );
-          })}
-        </div>
+        {position.technologies && (
+          <div>
+            {position.technologies.map((tech, index) => {
+              const imagePath = imagePaths[tech];
+              return (
+                <img
+                  key={positionIndex + index}
+                  className={styles.techImages}
+                  src={require(`../../../../${imagePath}`)}
+                />
+              );
+            })}
+          </div>
+        )}
       </div>
       <AnimateHeight duration={500} height={showDesc ? 'auto' : 0}>
         <ul className={styles.descList}>
