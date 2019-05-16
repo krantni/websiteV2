@@ -9,7 +9,7 @@ export interface Props {
 
 const Experience = ({ experiences }: Props) => {
   return (
-    <>
+    <div className={styles.holder}>
       <div className={styles.header}>
         <span className={styles.experience}>Experience</span>
       </div>
@@ -17,7 +17,7 @@ const Experience = ({ experiences }: Props) => {
         experiences.map((job, index) => {
           return <JobElement details={job} key={`job${index}`} />;
         })}
-    </>
+    </div>
   );
 };
 

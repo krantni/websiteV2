@@ -51,13 +51,10 @@ body {
 
 .sectionContent {
   padding-top: 20px;
-  padding-left: 10px;
   grid-column-start: content;
   grid-row: 1 / -1;
   animation: fadeIn 1s forwards;
   width: 100%;
-  padding-bottom: 20px;
-
 }
 .intro {
   animation: fadeIn 1s forwards;
