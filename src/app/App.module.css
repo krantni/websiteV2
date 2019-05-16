@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   color: white;
+  height: 100%;
 }
 
 .homeContainer {
@@ -55,7 +56,6 @@ body {
   grid-row: 1 / -1;
   animation: fadeIn 1s forwards;
   width: 100%;
-  margin-bottom: 35px;
 }
 .intro {
   animation: fadeIn 1s forwards;
