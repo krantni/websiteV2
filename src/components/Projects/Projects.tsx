@@ -5,7 +5,7 @@ import OldWebsite from '../../images/projects/oldWebsite.png';
 
 const Projects = () => {
   return (
-    <>
+    <div className={styles.holder}>
       <div className={styles.header}>
         <span className={styles.projects}>Projects</span>
       </div>
@@ -49,7 +49,7 @@ const Projects = () => {
           because this website is better.
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

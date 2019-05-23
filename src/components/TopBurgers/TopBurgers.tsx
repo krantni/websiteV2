@@ -22,7 +22,7 @@ const TopBurgers = ({ burgers }: Props) => {
   };
 
   return (
-    <>
+    <div className={styles.burgerContainer}>
       <div className={styles.header}>
         <span className={styles.topBurgers}>Top Burgers</span>
       </div>
@@ -36,7 +36,7 @@ const TopBurgers = ({ burgers }: Props) => {
         burgers.sort(sortByBurgerRank).map((burger, index) => {
           return <BurgerElement burger={burger} key={burger.name} index={index + 1} />;
         })}
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,12 @@
     display: flex;
     justify-content: center;
 }
+
+.holder {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .projects {
     text-align: center;
     font-weight: 600;
@@ -15,13 +21,11 @@
 }
 
 .intro {
-    width: 75%;
-    margin: 0 auto;
+    padding-bottom: 15px;
 }
 .project {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .title {
     width: 100%;

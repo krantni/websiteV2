@@ -14,7 +14,10 @@
     background-size: 100% 2px;
 }
 
-.intro {
-    width: 75%;
+.burgerContainer {
+    width: 80%;
     margin: 0 auto;
+}
+.intro {
+    padding-bottom: 15px;
 }

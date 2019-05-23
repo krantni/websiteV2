@@ -16,4 +16,6 @@
 
 .holder {
     padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
 }

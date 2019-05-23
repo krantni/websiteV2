@@ -9,13 +9,13 @@ export interface Props {
 
 const Education = ({ schools }: Props) => {
   return (
-    <>
+    <div className={styles.holder}>
       <div className={styles.education}>Education</div>
       {schools &&
         schools.map((school, index) => {
           return <SchoolElement details={school} key={`school${index}`} />;
         })}
-    </>
+    </div>
   );
 };
 
