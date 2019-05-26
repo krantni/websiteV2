@@ -29,8 +29,7 @@ const TopBurgers = ({ burgers }: Props) => {
       <div className={styles.intro}>
         Ever have a burger and I think: "This is the best burger I've ever had"? I do all
         the time, so now I've decided to keep track. Here's my list of the best burgers
-        I've ever had. Feel free to send me a tweet if you think you've had some burgers
-        that are better!
+        I've ever had.
       </div>
       {burgers &&
         burgers.sort(sortByBurgerRank).map((burger, index) => {

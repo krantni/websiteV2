@@ -9,6 +9,7 @@
     "declaration": true,
     "moduleResolution": "node",
     "rootDir": "src",
+    "baseUrl": "src/",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -24,8 +25,7 @@
     "strict": true,
     "module": "esnext",
     "resolveJsonModule": true,
-    "noEmit": true,
-    "isolatedModules": true
+    "noEmit": true
   },
   "include": [
     "src/**/*"

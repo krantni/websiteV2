@@ -27,11 +27,7 @@ const Projects = () => {
           personal resume website (much like this one), so I figured I'd give it a shot.{' '}
         </div>
         <div className={styles.projectImageHolder}>
-          <img
-            src={OldWebsite}
-            className={styles.projectImage}
-            alt={'Website iteration #1'}
-          />
+          <img src={OldWebsite} alt={'Website iteration #1'} />
         </div>
         <div className={styles.text}>
           {' '}
