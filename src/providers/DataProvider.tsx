@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Burger } from 'components/TopBurgers/Burger/Burger';
-import { Job } from 'components/Experience/Job/Job';
-import { School } from 'components/Education/School/School';
+import { Burger } from '../components/TopBurgers/Burger/Burger';
+import { Job } from '../components/Experience/Job/Job';
+import { School } from '../components/Education/School/School';
 
 const DataContext = React.createContext<{
   jobs: Job[];

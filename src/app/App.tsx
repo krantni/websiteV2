@@ -1,14 +1,14 @@
 import * as React from 'react';
-import ProfileImage from 'components/ProfileImage';
-import Experience from 'components/Experience';
-import Education from 'components/Education';
-import TopBurgers from 'components/TopBurgers';
+import ProfileImage from '../components/ProfileImage';
+import Experience from '../components/Experience';
+import Education from '../components/Education';
+import TopBurgers from '../components/TopBurgers';
 
 import styles from './App.module.css';
-import SideBarMenu from 'components/SideBarMenu';
-import { Sections } from 'constants/sections';
-import Projects from 'components/Projects';
-import { useDataContext } from 'providers/DataProvider';
+import SideBarMenu from '../components/SideBarMenu';
+import { Sections } from '../constants/sections';
+import Projects from '../components/Projects';
+import { useDataContext } from '../providers/DataProvider';
 
 const App = () => {
   const [visibleSection, openSection] = React.useState<Sections>('');
