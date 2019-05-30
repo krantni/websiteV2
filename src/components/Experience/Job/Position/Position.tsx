@@ -41,6 +41,7 @@ const Position: React.SFC<PositionProps> = props => {
                 <img
                   key={positionIndex + index}
                   className={styles.techImages}
+                  alt={tech}
                   src={require(`../../../../${imagePath}`)}
                 />
               );

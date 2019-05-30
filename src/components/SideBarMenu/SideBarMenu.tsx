@@ -8,16 +8,12 @@ import linkedInIcon from '../../images/icons/linkedin.svg';
 import twitterIcon from '../../images/icons/twitter.svg';
 import githubIcon from '../../images/icons/github.svg';
 import links from '../../constants/links';
-import { Sections } from '../../constants/sections';
+import { Link, withRouter } from 'react-router-dom';
+import { Sections } from 'constants/sections';
 
-export interface Props {
-  openSection: (section: Sections) => void;
-  selected: Sections;
-}
-
-const SideBarMenu = ({ openSection, selected }: Props) => {
+const SideBarMenu = () => {
   const isSelected = (section: Sections) => {
-    return section === selected;
+    return section === (window.location.pathname.slice(1) as Sections);
   };
 
   return (
@@ -26,31 +22,34 @@ const SideBarMenu = ({ openSection, selected }: Props) => {
         className={
           styles.iconHolder + ' ' + (isSelected('projects') ? styles.selected : '')
         }
-        onClick={() => openSection('projects')}
       >
-        <img className={styles.icon} src={codeIcon} alt="Projects" />
-        <div className={styles.iconText}>Projects</div>
-        <span className={styles.decorativeLine} />
+        <Link to={'/projects'} className={styles.link}>
+          <img className={styles.icon} src={codeIcon} alt="Projects" />
+          <div className={styles.iconText}>Projects</div>
+          <span className={styles.decorativeLine} />
+        </Link>
       </div>
       <div
         className={
           styles.iconHolder + ' ' + (isSelected('burgers') ? styles.selected : '')
         }
-        onClick={() => openSection('burgers')}
       >
-        <img className={styles.icon} src={burgerIcon} alt="Burgers" />
-        <div className={styles.iconText}>Burgers</div>
-        <span className={styles.decorativeLine} />
+        <Link to={'/burgers'} className={styles.link}>
+          <img className={styles.icon} src={burgerIcon} alt="Burgers" />
+          <div className={styles.iconText}>Burgers</div>
+          <span className={styles.decorativeLine} />
+        </Link>
       </div>
       <div
         className={
           styles.iconHolder + ' ' + (isSelected('experience') ? styles.selected : '')
         }
-        onClick={() => openSection('experience')}
       >
-        <img className={styles.icon} src={experienceIcon} alt="Experience" />
-        <div className={styles.iconText}>Experience</div>
-        <span className={styles.decorativeLine} />
+        <Link to={'/experience'} className={styles.link}>
+          <img className={styles.icon} src={experienceIcon} alt="Experience" />
+          <div className={styles.iconText}>Experience</div>
+          <span className={styles.decorativeLine} />
+        </Link>
       </div>
       <div className={styles.iconHolder} onClick={() => window.open(links.github)}>
         <img className={styles.icon} src={githubIcon} alt="GitHub" />
@@ -71,4 +70,4 @@ const SideBarMenu = ({ openSection, selected }: Props) => {
   );
 };
 
-export default SideBarMenu;
+export default withRouter(SideBarMenu);

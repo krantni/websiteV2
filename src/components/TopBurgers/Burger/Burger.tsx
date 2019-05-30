@@ -26,7 +26,7 @@ const Burger: React.SFC<BurgerProps> = props => {
         </div>
         <div className={styles.marginLeft}>
           <div className={styles.restaurant}>
-            <a href={burger.website} target="_blank">
+            <a href={burger.website} target="_blank" rel="noopener noreferrer">
               {burger.restaurant} -{' '}
               <span>
                 {burger.city}, {burger.state}

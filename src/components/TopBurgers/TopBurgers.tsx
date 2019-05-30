@@ -2,12 +2,12 @@ import * as React from 'react';
 import { Burger } from './Burger/Burger';
 import BurgerElement from './Burger';
 import styles from './TopBurgers.module.css';
+import { useDataContext } from 'providers/DataProvider';
+import { RouteChildrenProps } from 'react-router';
 
-export interface Props {
-  burgers: Burger[] | null;
-}
+const TopBurgers: React.FunctionComponent<RouteChildrenProps> = () => {
+  const { burgers } = useDataContext();
 
-const TopBurgers = ({ burgers }: Props) => {
   const sortByBurgerRank = (a: Burger, b: Burger) => {
     // tslint:disable: radix
     const rankA = parseInt(a.rank);

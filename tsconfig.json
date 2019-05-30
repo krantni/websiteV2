@@ -6,9 +6,9 @@
       "dom"
     ],
     "sourceMap": true,
-    "declaration": true,
     "moduleResolution": "node",
     "rootDir": "src",
+    "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

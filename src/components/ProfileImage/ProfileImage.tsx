@@ -6,7 +6,7 @@ import me from '../../images/me.png';
 const ProfileImage = () => {
   return (
     <div className={styles.imageHolder}>
-      <img className={styles.profileImage} src={me} />
+      <img className={styles.profileImage} src={me} alt={'Nick Krantz'} />
     </div>
   );
 };

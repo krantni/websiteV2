@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { School } from './School/School';
 import SchoolElement from './School';
 import styles from './Education.module.css';
+import { useDataContext } from 'providers/DataProvider';
 
-export interface Props {
-  schools: School[] | null;
-}
+const Education = () => {
+  const { schools } = useDataContext();
 
-const Education = ({ schools }: Props) => {
   return (
     <div className={styles.holder}>
       <div className={styles.education}>Education</div>
