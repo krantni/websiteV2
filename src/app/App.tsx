@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, withRouter, RouteComponentProps } from 'react-router';
+import { Route, withRouter, RouteComponentProps, Redirect } from 'react-router';
 
 import ProfileImage from 'components/ProfileImage';
 import Experience from 'components/Experience';
@@ -59,6 +59,7 @@ class App extends React.Component<RouteComponentProps> {
               />
               <Route path="/burgers" component={TopBurgers} />
               <Route path="/projects" component={Projects} />
+              <Redirect from="*" to="/" />
             </div>
           </div>
         )}
