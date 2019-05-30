@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './Projects.module.css';
 
-import OldWebsite from '../../images/projects/oldWebsite.png';
+import OldWebsite from 'images/projects/oldWebsite.png';
 
 const Projects = () => {
   return (

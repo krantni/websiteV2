@@ -14,7 +14,6 @@ import styles from './App.module.css';
 class App extends React.Component<RouteComponentProps> {
   render() {
     const { location } = this.props;
-    console.log(location.pathname);
     return (
       <>
         {location.pathname === '/' && (

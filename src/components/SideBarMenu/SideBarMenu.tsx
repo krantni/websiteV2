@@ -1,26 +1,30 @@
 import * as React from 'react';
 import styles from './SideBarMenu.module.css';
 
-import burgerIcon from '../../images/icons/burger.svg';
-import experienceIcon from '../../images/icons/experience.svg';
-import codeIcon from '../../images/icons/code.svg';
-import linkedInIcon from '../../images/icons/linkedin.svg';
-import twitterIcon from '../../images/icons/twitter.svg';
-import githubIcon from '../../images/icons/github.svg';
-import links from '../../constants/links';
-import { Link, withRouter } from 'react-router-dom';
+import burgerIcon from 'images/icons/burger.svg';
+import experienceIcon from 'images/icons/experience.svg';
+import codeIcon from 'images/icons/code.svg';
+import linkedInIcon from 'images/icons/linkedin.svg';
+import twitterIcon from 'images/icons/twitter.svg';
+import githubIcon from 'images/icons/github.svg';
+import links from 'constants/links';
+import { Link, withRouter, RouteComponentProps } from 'react-router-dom';
 import { Sections } from 'constants/sections';
 
-const SideBarMenu = () => {
-  const isSelected = (section: Sections) => {
-    return section === (window.location.pathname.slice(1) as Sections);
+
+class SideBarMenu extends React.Component<RouteComponentProps> {
+  private isSelected = (section: Sections) => {
+    const { location } = this.props;
+
+    return section === (location.pathname.slice(1) as Sections);
   };
 
+  render() {
   return (
     <div className={styles.menu}>
       <div
         className={
-          styles.iconHolder + ' ' + (isSelected('projects') ? styles.selected : '')
+          styles.iconHolder + ' ' + (this.isSelected('projects') ? styles.selected : '')
         }
       >
         <Link to={'/projects'} className={styles.link}>
@@ -31,7 +35,7 @@ const SideBarMenu = () => {
       </div>
       <div
         className={
-          styles.iconHolder + ' ' + (isSelected('burgers') ? styles.selected : '')
+          styles.iconHolder + ' ' + (this.isSelected('burgers') ? styles.selected : '')
         }
       >
         <Link to={'/burgers'} className={styles.link}>
@@ -42,7 +46,7 @@ const SideBarMenu = () => {
       </div>
       <div
         className={
-          styles.iconHolder + ' ' + (isSelected('experience') ? styles.selected : '')
+          styles.iconHolder + ' ' + (this.isSelected('experience') ? styles.selected : '')
         }
       >
         <Link to={'/experience'} className={styles.link}>
@@ -68,6 +72,7 @@ const SideBarMenu = () => {
       </div>
     </div>
   );
+      }
 };
 
 export default withRouter(SideBarMenu);

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './ProfileImage.module.css';
 
-import me from '../../images/me.png';
+import me from 'images/me.png';
 
 const ProfileImage = () => {
   return (
