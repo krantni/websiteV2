@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, withRouter, RouteComponentProps, Redirect } from 'react-router';
+import { Route, withRouter, RouteComponentProps, Redirect, Switch } from 'react-router';
 
 import ProfileImage from 'components/ProfileImage';
 import Experience from 'components/Experience';
@@ -47,18 +47,20 @@ class App extends React.Component<RouteComponentProps> {
               <SideBarMenu />
             </div>
             <div className={styles.sectionContent}>
-              <Route
-                path="/experience"
-                render={() => (
-                  <>
-                    <Experience />
-                    <Education />
-                  </>
-                )}
-              />
-              <Route path="/burgers" component={TopBurgers} />
-              <Route path="/projects" component={Projects} />
-              <Redirect from="*" to="/" />
+              <Switch>
+                <Route
+                  path="/experience"
+                  render={() => (
+                    <>
+                      <Experience />
+                      <Education />
+                    </>
+                  )}
+                />
+                <Route path="/burgers" component={TopBurgers} />
+                <Route path="/projects" component={Projects} />
+                <Redirect from="*" to="/" />
+              </Switch>
             </div>
           </div>
         )}
