@@ -39,9 +39,18 @@
     background-size: 100% 2px;
 }
 
+.heading {
+    font-size: 1.25em;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
 .text {
     width: 100%;
     padding-top: 20px;
+}
+.text > div {
+    padding-top: 10px;
 }
 .projectImageHolder {
     width: 100%;
@@ -50,7 +59,17 @@
 
 }
 .projectImageHolder > img {
-    width: 100%;
-    display:block;
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+dl {
+    margin: 0;
+}
+
+dl > dt {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 

@@ -3,11 +3,6 @@ import styles from '../Projects.module.css';
 
 const WebsiteV2 = () => (
   <>
-    <div className={styles.intro}>
-      Every once and awhile I get some time to work on some projects that I'm interested
-      in. I plan on explaining them here, mostly so I might remember them later. If
-      they're code related, you can view the source code on my github!
-    </div>
     <div className={styles.project}>
       <div className={styles.title}>This Website (The one you're on right now)</div>
       <div className={styles.text}>
