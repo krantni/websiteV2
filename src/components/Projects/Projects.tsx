@@ -3,8 +3,14 @@ import styles from './Projects.module.css';
 import WebsiteV2 from './WebsiteV2';
 import WebsiteV1 from './WebsiteV1';
 import OnlyInYourStateMap from './OnlyInYourStateMap';
+import FacebookTaggedPhotos from './FacebookTaggedPhotos';
 
-export type projectSections = 'onlyInYourState' | 'websiteV2' | 'webSiteV1' | '';
+export type projectSections =
+  | 'facebookTaggedPhotos'
+  | 'onlyInYourState'
+  | 'websiteV2'
+  | 'webSiteV1'
+  | '';
 
 const Projects = () => {
   const [visibleProject, showProject] = React.useState<projectSections>('');
@@ -18,6 +24,10 @@ const Projects = () => {
         in. I plan on explaining them here, mostly so I might remember them later. If
         they're code related, you can view the source code on my github!
       </div>
+      <FacebookTaggedPhotos
+        isVisible={visibleProject === 'facebookTaggedPhotos'}
+        updateVisibleProject={showProject}
+      />
       <OnlyInYourStateMap
         isVisible={visibleProject === 'onlyInYourState'}
         updateVisibleProject={showProject}
