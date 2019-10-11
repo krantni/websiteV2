@@ -8,6 +8,7 @@ import TopBurgers from 'components/TopBurgers';
 // import Home from 'components/Home';
 import SideBarMenu from 'components/SideBarMenu';
 import Projects from 'components/Projects';
+import TradingBlock from 'components/TradingBlock';
 
 import styles from './App.module.css';
 
@@ -16,6 +17,9 @@ class App extends React.Component<RouteComponentProps> {
     const { location } = this.props;
     return (
       <>
+        {location.pathname === '/tradingblock' && (
+          <TradingBlock />
+        )}
         {location.pathname === '/' && (
           <div className={styles.homeContainer}>
             <div className={styles.header}>
@@ -35,7 +39,7 @@ class App extends React.Component<RouteComponentProps> {
             </div>
           </div>
         )}
-        {location.pathname !== '/' && (
+        {location.pathname !== '/' && location.pathname !== '/tradingblock' && (
           <div className={styles.container}>
             <div className={styles.header}>
               <ProfileImage />
