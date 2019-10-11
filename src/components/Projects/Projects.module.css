@@ -30,18 +30,29 @@
 .title {
     width: 100%;
     font-size: 1.75em;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
     text-align: center;
     background-image: linear-gradient(90deg, #617487 0%, #617487 100%);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 100% 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 1.25em;
+    text-decoration: underline;
+    padding-bottom: 5px;
 }
 
 .text {
     width: 100%;
     padding-top: 20px;
+}
+.text > div {
+    padding-top: 10px;
 }
 .projectImageHolder {
     width: 100%;
@@ -50,7 +61,54 @@
 
 }
 .projectImageHolder > img {
-    width: 100%;
-    display:block;
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
 }
 
+dl {
+    margin: 0;
+}
+
+dl > dt {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+
+.arrow {
+    height: 2em;
+    width: 2em;
+    margin-right: 10px;
+}
+
+.arrow > .rotateUp {
+ animation: rotate-up .5s;
+ animation-fill-mode: forwards;      
+}
+
+@keyframes rotate-up {
+    from {
+     transform: rotate(0deg);
+    }
+   
+    to {
+     transform: rotate(-90deg);
+    }
+}
+
+.arrow > .rotateDown {
+ animation: rotate-down .5s;
+ animation-fill-mode: forwards;      
+}
+
+@keyframes rotate-down {
+    from {
+     transform: rotate(-90deg);
+    }
+   
+    to {
+     transform: rotate(0deg);
+    }
+}
