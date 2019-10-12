@@ -3,5 +3,24 @@
   height: 100%;
   background-color: rgb(16, 33, 49);
 }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Dark Blue - 0A0922 */
 /* Dark Green - 042117 */

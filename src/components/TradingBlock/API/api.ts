@@ -11,7 +11,7 @@ export const fetchLeagueUsers = (): Promise<TeamOwner[]> => {
           userName: user.display_name,
           userID: user.user_id,
           avatarID: user.avatar,
-          teamName: user.metadata.team_name,
+          teamName: user.metadata && user.metadata.team_name ? user.metadata.team_name : "",
           players: [],
         };
       });
