@@ -1,0 +1,25 @@
+.team{
+  width: 50%;
+}
+
+.owner {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.playerContainer{
+  padding: 20px;
+}
+
+.tradingBlock {
+  height: 150px;
+    background-color: #62788D;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .team{
+    width: 75%;
+  }
+}
