@@ -1,5 +1,7 @@
 .team{
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .owner {
@@ -13,13 +15,13 @@
 }
 
 .tradingBlock {
-    height: fit-content;
     background-color: #62788D;
     border-radius: 10px;
+    flex:1;
 }
 
 @media screen and (max-width: 800px) {
   .team{
-    width: 75%;
+    width: 100%;
   }
 }
