@@ -13,14 +13,15 @@ export const mapPlayersToNickname = (
     if (rosterMetaData && rosterMetaData[nickNameKey]) {
       nickName = rosterMetaData[nickNameKey];
     }
-    const playerIDName = players as { [key: string]: string };
-    const playerName = playerIDName[playerID] ? playerIDName[playerID] : '';
+    const playerIDObject = players as { [key: string]: { [key: string]: string } };
 
     return {
       id: playerID,
-      name: playerName,
+      name: playerIDObject[playerID].name,
       nickname: nickName,
       isOnTradeBlock: nickName === 'OTB',
+      team: playerIDObject[playerID].team,
+      position: playerIDObject[playerID].position,
     };
   });
 };

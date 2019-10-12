@@ -33,4 +33,6 @@ export type Player = {
   name: string;
   nickname: string;
   isOnTradeBlock: boolean;
+  team: string;
+  position: string;
 };

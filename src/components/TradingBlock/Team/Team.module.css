@@ -13,7 +13,7 @@
 }
 
 .tradingBlock {
-  height: 150px;
+    height: fit-content;
     background-color: #62788D;
     border-radius: 10px;
 }
