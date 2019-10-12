@@ -17,9 +17,7 @@ class App extends React.Component<RouteComponentProps> {
     const { location } = this.props;
     return (
       <>
-        {location.pathname === '/tradingblock' && (
-          <TradingBlock />
-        )}
+        {location.pathname === '/tradingblock' && <TradingBlock />}
         {location.pathname === '/' && (
           <div className={styles.homeContainer}>
             <div className={styles.header}>

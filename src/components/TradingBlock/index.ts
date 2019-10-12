@@ -1,1 +1,1 @@
-export { default } from './TradingBlock'
+export { default } from './TradingBlock';
