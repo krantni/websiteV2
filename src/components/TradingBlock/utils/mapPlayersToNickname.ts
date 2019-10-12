@@ -19,7 +19,7 @@ export const mapPlayersToNickname = (
       id: playerID,
       name: playerIDObject[playerID].name,
       nickname: nickName,
-      isOnTradeBlock: nickName === 'OTB',
+      isOnTradeBlock: nickName.toUpperCase() === 'OTB',
       team: playerIDObject[playerID].team,
       position: playerIDObject[playerID].position,
     };
