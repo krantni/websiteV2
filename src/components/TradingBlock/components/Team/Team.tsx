@@ -1,4 +1,4 @@
-import * as React from 'components/TradingBlock/components/Team/node_modules/react';
+import * as React from 'react';
 import { TeamOwner } from '../../utils/types';
 import styles from './Team.module.css';
 
