@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './Modal.module.css';
 
-const Modal = ({message, closeModal}: Props) => {
+const Modal = ({ message, closeModal }: Props) => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modal}>
@@ -14,8 +14,8 @@ const Modal = ({message, closeModal}: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export interface Props {
   message: string;
