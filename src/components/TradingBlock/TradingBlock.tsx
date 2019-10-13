@@ -1,31 +1,39 @@
 import * as React from 'react';
 import styles from './TradingBlock.module.css';
-import LoadingSpinner from './LoadingSpinner';
+import LoadingSpinner from './components/LoadingSpinner';
+import Team from './components/Team';
 import { fetchLeagueUsers, fetchLeagueRosters } from './API/api';
 import { TeamOwner } from './utils/types';
-import Team from './Team';
+import Modal from './components/Modal';
 
 const TradingBlock = () => {
   const [teamOwners, setTeamOwners] = React.useState<TeamOwner[]>([]);
   const [isLoading, toggleLoading] = React.useState<boolean>(false);
+  const [errorMessage, setError] = React.useState<string>('');
 
   React.useEffect(() => {
-    const leagueUserPromise = fetchLeagueUsers();
-    const leagueRosterPromise = fetchLeagueRosters();
+    const leagueUserPromise = fetchLeagueUsers().catch(() => {
+      setError('Error retrieving team owners.');
+    });
+    const leagueRosterPromise = fetchLeagueRosters().catch(() => {
+      setError('Error retrieving team rosters.');
+    });
     Promise.all([leagueUserPromise, leagueRosterPromise]).then(
       ([teamOwners, rosters]) => {
-        teamOwners.forEach(owner => {
-          const roster = rosters.find(roster => {
-            return roster.ownerID === owner.userID;
+        if (teamOwners && rosters) {
+          teamOwners.forEach(owner => {
+            const roster = rosters.find(roster => {
+              return roster.ownerID === owner.userID;
+            });
+            if (roster) {
+              owner.players = roster.players;
+            }
           });
-          if (roster) {
-            owner.players = roster.players;
-          }
-        });
-        // this causes a double render.. I think I'd have to move to React.useReducer to update two things at once.
-        console.log(teamOwners);
-        toggleLoading(false);
-        setTeamOwners(teamOwners);
+          // this causes a double render.. I think I'd have to move to React.useReducer to update two things at once.
+          console.log(teamOwners);
+          toggleLoading(false);
+          setTeamOwners(teamOwners);
+        }
       },
     );
   }, []);
@@ -46,6 +54,15 @@ const TradingBlock = () => {
             );
           })}
         </div>
+      )}
+      {errorMessage && (
+        <Modal
+          message={errorMessage}
+          closeModal={() => {
+            setError('');
+            window.location.reload();
+          }}
+        />
       )}
     </div>
   );
