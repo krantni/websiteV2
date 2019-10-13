@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'components/TradingBlock/components/LoadingSpinner/node_modules/react';
 import styles from './LoadingSpinner.module.css';
 import Spinner from './loading.svg';
 

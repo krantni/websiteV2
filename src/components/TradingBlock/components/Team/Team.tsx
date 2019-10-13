@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { TeamOwner } from '../utils/types';
+import * as React from 'components/TradingBlock/components/Team/node_modules/react';
+import { TeamOwner } from '../../utils/types';
 import styles from './Team.module.css';
 
 const Team = ({ owner }: Props) => {

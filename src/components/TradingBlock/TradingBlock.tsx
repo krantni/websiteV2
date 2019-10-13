@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styles from './TradingBlock.module.css';
-import LoadingSpinner from './LoadingSpinner';
+import LoadingSpinner from './components/LoadingSpinner';
+import Team from './components/Team';
 import { fetchLeagueUsers, fetchLeagueRosters } from './API/api';
 import { TeamOwner } from './utils/types';
-import Team from './Team';
 
 const TradingBlock = () => {
   const [teamOwners, setTeamOwners] = React.useState<TeamOwner[]>([]);
