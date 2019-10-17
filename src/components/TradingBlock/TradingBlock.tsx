@@ -30,7 +30,6 @@ const TradingBlock = () => {
             }
           });
           // this causes a double render.. I think I'd have to move to React.useReducer to update two things at once.
-          console.log(teamOwners);
           toggleLoading(false);
           setTeamOwners(teamOwners);
         }
