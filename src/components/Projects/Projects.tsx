@@ -4,8 +4,10 @@ import WebsiteV2 from './WebsiteV2';
 import WebsiteV1 from './WebsiteV1';
 import OnlyInYourStateMap from './OnlyInYourStateMap';
 import FacebookTaggedPhotos from './FacebookTaggedPhotos';
+import SleeperTradingBlock from './SleeperTradingBlock';
 
 export type projectSections =
+  | 'sleeperTradingBlock'
   | 'facebookTaggedPhotos'
   | 'onlyInYourState'
   | 'websiteV2'
@@ -24,6 +26,10 @@ const Projects = () => {
         in. I plan on explaining them here, mostly so I might remember them later. If
         they're code related, you can view the source code on my github!
       </div>
+      <SleeperTradingBlock
+        isVisible={visibleProject === 'sleeperTradingBlock'}
+        updateVisibleProject={showProject}
+      />
       <FacebookTaggedPhotos
         isVisible={visibleProject === 'facebookTaggedPhotos'}
         updateVisibleProject={showProject}
