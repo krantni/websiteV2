@@ -91,7 +91,7 @@ const SleeperTradingBlock = ({ isVisible, updateVisibleProject }: Props) => {
             users still using it in the off-season.
           </div>
           <div className={styles.projectImageHolder}>
-            <img src={TradingBlockImage} alt={'Website iteration #1'} />
+            <img src={TradingBlockImage} alt={'Trading Block Screenshot'} />
           </div>
         </AnimateHeight>
       </div>
