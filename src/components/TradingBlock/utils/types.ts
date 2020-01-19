@@ -16,7 +16,7 @@ export type TeamOwner = {
 };
 
 export type ServiceRosterData = {
-  players: string[];
+  players: string[] | null;
   owner_id: string;
   metadata: {
     [key: string]: string;
@@ -35,4 +35,38 @@ export type Player = {
   isOnTradeBlock: boolean;
   team: string;
   position: string;
+};
+
+export type TradingBlockState = {
+  leagueId: string;
+  leagueName: string;
+  teamOwners: TeamOwner[];
+  isLoading: boolean;
+  errorMessage: string;
+};
+
+export type TradingBlockActions = SetOwners | SetLeagueId | SetError | Reset | SetLoading;
+
+type SetOwners = {
+  type: 'SET_TRADING_BLOCK';
+  leagueName: string;
+  owners: TeamOwner[];
+};
+
+type SetLeagueId = {
+  type: 'SET_LEAGUE_ID';
+  id: string;
+};
+
+type SetError = {
+  type: 'SET_ERROR';
+  error: string;
+};
+
+type SetLoading = {
+  type: 'SET_LOADING';
+};
+
+type Reset = {
+  type: 'RESET';
 };

@@ -31,3 +31,16 @@ export const fetchLeagueRosters = (): Promise<Roster[]> => {
       });
     });
 };
+
+export const fetchLeagueDetails = (): Promise<string> => {
+  return axios
+    .get(`https://api.sleeper.app/v1/league/423262970320003072`)
+    .then((serviceResponse: AxiosResponse<{ name: string }>): string => {
+      if (serviceResponse.data && serviceResponse.data) {
+        return serviceResponse.data.name;
+      }
+      throw new Error(
+        'Error finding league details. Did you enter the correct League ID?',
+      );
+    });
+};
