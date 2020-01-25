@@ -90,6 +90,7 @@ const SleeperTradingBlock = ({ isVisible, updateVisibleProject }: Props) => {
             bugs to me. As of writing this I've had 3,742 page views with a handful of
             users still using it in the off-season.
           </div>
+          
           <div className={styles.projectImageHolder}>
             <img src={TradingBlockImage} alt={'Trading Block Screenshot'} />
           </div>
