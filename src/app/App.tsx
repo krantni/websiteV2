@@ -16,6 +16,7 @@ class App extends React.Component<RouteComponentProps> {
     const { location } = this.props;
     if (location.pathname === '/tradingblock') {
       window.location.href = 'https://tradingblock.app/423262970320003072';
+      return;
     }
     return (
       <>
